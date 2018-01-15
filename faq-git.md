@@ -9,7 +9,7 @@ https://alm.developpez.com/faq/scm
 7.1 Généralités
 - Qu'est ce que GIT ?
 
-GIT est un système de contrôle de révision. Il a été écrit en 2005 à l'initiative de Linus Torvalds pour gérer les sources du kernel Linux et qui a défini initialement son outil comme un "stupide tracker de contenu".
+GIT est un système de contrôle de révision décentralisé. Il a été écrit en 2005 à l'initiative de Linus Torvalds pour gérer les sources du kernel Linux et qui a défini initialement son outil comme un "stupide tracker de contenu".
 
 - Que signifie GIT ?
 
