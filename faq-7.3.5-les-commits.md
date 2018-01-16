@@ -1,0 +1,11 @@
+7.3.5 Les commits
+- Qu'est ce qu'un commit ?
+- Comment créer un commit ?
+- Comment ajouter un message en créant un commit ?
+- Comment modifier le message d'un commit existant ?
+- Comment supprimer le dernier commit de la branche courante sans perdre les modifications ?
+- Comment supprimer le dernier commit de la branche courante avec les modifications ?
+- Comment supprimer les "n" derniers commits de la branche courante sans perdre les modifications ?
+- Comment supprimer les "n" derniers commits de la branche courante avec les modifications ?
+- Comment ajouter un commit d'une branche A dans une branche B sans effectuer un merge ? (cherry-pick)
+- Comment annuler un commit existant ? (revert)
