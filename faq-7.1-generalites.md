@@ -37,7 +37,7 @@ Il s'agit d'un bare repository servant d'espace de partage. Il peut être local 
 
 Ces termes sont souvent employés dans les conversations en anglais à propos de git et également dans sa documentation officielle. 
 
-*upstream* désigne le repository distant depuis lequel vous tirez des informations vers votre repository local (clone, pull, fetch, ...) ou depuis lequel vous poussez des informations (push).
+*upstream* désigne le repository distant depuis lequel vous tirez des informations vers votre repository local (clone, pull, fetch, ...) ou vers lequel vous poussez des informations (push).
 
 *downstream* désigne tous les repositories qui dépendent d'un *upstream* pour leur synchronisation.
 
