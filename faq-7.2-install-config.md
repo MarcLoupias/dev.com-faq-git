@@ -65,7 +65,7 @@ $ git version
 
 - Quels sont les fichiers de configuration de GIT ?
 
-Les fichiers de configuration de git sont les suivants (l'ordre ci-dessous défini la priorité des options) :
+Les fichiers de configuration de git sont les suivants (l'ordre ci-dessous correspond à l'ordre de lecture par git, la dernière valeur lue est la valeur prise en compte) :
 
 1. `C:\ProgramData\Git\config`
 2. system config (e.g. `C:\Program Files\Git\mingw64\etc\gitconfig`)
