@@ -29,6 +29,8 @@ La traduction française appropriée est *dépôt*. Il s'agit d'un répertoire v
 
 Un repository git correspond généralement à un projet unique mais ce n'est pas forcément le cas. Certaines organisations utilisent un repository unique pour gérer les codes sources de tous leurs projets. Cette stratégie est nommée la "monorepo strategy". C'est notamment le cas de Google qui a expliqué en détail sa stratégie lors d'[une conférence en 2015](https://www.youtube.com/watch?v=W71BTkUbdqE).
 
+Un repository est donc composé d'un répertoire `.git` contenant toutes les meta-données du repository et de la working directory reflétant l'état actuel `checkout` par git (un commit, une branche ou un tag).
+
 - Qu'est-ce qu'un remote ?
 
 Il s'agit d'un bare repository servant d'espace de partage. Il peut être local (si vous exposez vos sources depuis votre propre machine) ou distant. Il est généralement accompagné d'un client web pour fournir une solution de gestion de projet intégrée (github, gitlab, gitblit, ...).
