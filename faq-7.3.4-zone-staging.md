@@ -57,6 +57,10 @@ Si le fichier existait déjà la commande
 
 ```
 git reset HEAD nom-fichier.txt
+Unstaged changes after reset:
+M       nom-fichier.txt
 ```
 
-Permet de supprimer les modifications. En fait on demande à git de réinitiliser l'état du fichier dans l'état qu'il a sur le dernier commit de la branche courante (`HEAD`).
+Permet de retirer un fichier de la zone de staging. **Les modifications ne sont pas supprimées**. 
+
+git nous l'indique avec le `M` devant le nom du fichier. Il signifie qu'il y a des modifications dans le fichier `nom-fichier.txt` qui ne sont pas présentes dans la zone de staging.
