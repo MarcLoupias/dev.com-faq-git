@@ -47,7 +47,7 @@ https://alm.developpez.com/faq/scm
 
 7.3.3 La working directory
 - Qu'est-ce que la working directory ?
-- Comment changer la working directory ?
+- Comment changer l'état de la working directory ?
 
 7.3.4 La zone de stagging
 - Qu'est ce que la zone de stagging ?
