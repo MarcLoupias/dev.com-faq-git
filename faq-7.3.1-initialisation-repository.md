@@ -2,10 +2,12 @@
 - Comment initialiser un repository
 
 ```
+$ cd /home/user/dev/projet-toto
 $ git init
+Initialized empty Git repository in /home/user/dev/projet-toto/.git/
 ```
 
-Initialise un repository dans le répertoire courant.
+Initialise un repository dans le répertoire courant. Le repository est composé du répertoire `.git` contenant les méta-data du dépôt et la working directory.
 
 - Comment initialiser un bare repository
 
@@ -13,7 +15,7 @@ Initialise un repository dans le répertoire courant.
 $ git init --bare
 ```
 
-Un bare repository ne contient pas de working directory. On peut donc pas travailler (créer des commits etc ...) avec. Un bare repository sert seulement à partager son travail (utilisé comme source pour les autres). Généralement les bare repository sont créés par des outils web comme github ou gitlab pour centraliser le travail entre développeurs et faciliter la collaboration via diverses fonctionnalités (gestion des issues, des milestones, etc ...)
+Un bare repository ne contient pas de working directory. On ne peut donc pas travailler (créer des commits etc ...) avec. Un bare repository sert seulement à partager son travail (utilisé comme source pour les autres). Généralement les bare repository sont créés par des outils web comme github ou gitlab pour centraliser le travail entre développeurs et faciliter la collaboration via diverses fonctionnalités (gestion des issues, des milestones, etc ...)
 
 - Comment cloner un repository
 
