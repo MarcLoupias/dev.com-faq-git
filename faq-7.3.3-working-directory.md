@@ -15,7 +15,7 @@ La commande git checkout peut prendre en paramètre un hash de commit, un nom de
 $ git checkout 3ffb92fe20b6785d801023783d2f18c4de6e1593
 ```
 
-A pour effet de changer l'état de la working directory en l'état correspondant au commit désigné.
+A pour effet de changer l'état de la working directory en l'état correspondant au commit désigné. Concrètement, git modifie les fichiers traqués pour les mettre dans l'état correspondant au commit désigné.
 
 Idem avec un nom de branche
 
