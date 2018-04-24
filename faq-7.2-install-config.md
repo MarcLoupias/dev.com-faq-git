@@ -146,6 +146,8 @@ $ git config --global user.email you@yourdomain.example.com
 
 ```
 $ git remote set-url origin https://domain.tld/repo.git
+# ou
+git remote add origin https://domain.tld/repo.git
 ```
 
 A pour effet de changer l'url pour le `fetch` et pour le `push`.
