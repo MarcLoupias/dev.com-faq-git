@@ -142,7 +142,7 @@ $ git config --global user.name "Your Name Comes Here"
 $ git config --global user.email you@yourdomain.example.com
 ```
 
-- Comment changer la push url ?
+- Comment changer l'URL d'un dépôt distant ?
 
 ```
 $ git remote set-url origin https://domain.tld/repo.git
