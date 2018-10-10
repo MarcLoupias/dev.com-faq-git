@@ -64,6 +64,7 @@ https://alm.developpez.com/faq/scm
 - Comment supprimer les "n" derniers commits de la branche courante sans perdre les modifications ?
 - Comment supprimer les "n" derniers commits de la branche courante avec les modifications ?
 - Comment ajouter un commit d'une branche A dans une branche B sans effectuer un merge ? (cherry-pick)
+- Comment ajouter un commit provenant d'une branche d'un autre repository à la branche courante de ce repository ? (cherry-pick)
 - Comment annuler un commit existant ? (revert)
 
 7.3.6 Les branches 
