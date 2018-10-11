@@ -70,10 +70,15 @@ https://alm.developpez.com/faq/scm
 7.3.6 Les branches 
 - Qu'est-ce qu'une branche ?
 - Comment lister les branches locales ?
+- Comment lister toutes les branches (locales, distantes, traquées, non-traquées) ?
 - Comment créer une branche ?
+- Comment créer une branche sur une repository distant ?
 - Comment supprimer une branche ?
+- Comment supprimer une branche distante ?
 - Comment renommer une branche ?
 - Comment comparer deux branches ?
+- Comment comparer les historiques de 2 branches ?
+- Comment comparer l'état de tous les fichiers présents dans deux branches ?
 - Comment comparer l'état d'un fichier présent dans deux branches ?
 
 7.3.7 Les fusions de branches (merge)
