@@ -106,10 +106,13 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 ## 7.3.8 [Réécriture de l'historique (`rebase`)](faq-7.3.8-rebase.md)
 
 - Qu'est-ce qu'un `rebase` ?
-- Qu'est-ce qu'un `rebase` intéractif ?
 - Pourquoi effectuer un `rebase` ?
+- Comment effectuer un `rebase` ?
+- Qu'est-ce qu'un `rebase` intéractif ?
 - Pourquoi effectuer un `rebase` intéractif ?
+- Comment effectuer un `rebase` intéractif ?
 - Comment annuler un `rebase` en cours ?
+- Comment résoudre un conflit lors d'un `rebase` ?
 
 ## 7.3.9 [Les tags](faq-7.3.9-tags.md)
 
