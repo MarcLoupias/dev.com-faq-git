@@ -10,7 +10,7 @@ C'est le creuset dans lequel vous préparez le prochain commit à créer sur la 
 
 Lorsque vous modifiez un fichier de la working directory, la modification doit être indexée (on dit aussi placée dans la zone de staging) pour être embarquée dans le prochain commit.
 
-### Comment ajouter un fichier à la zone de stagging ?
+### Comment ajouter un fichier à la zone de staging ?
 
 Sur la branche master vous créez un fichier `nom-fichier.txt`, un git status vous indique l'état de la working directory :
 
@@ -48,7 +48,7 @@ Changes to be committed:
         new file:   nom-fichier.txt
 ```
 
-### Comment retirer un fichier de la zone de stagging ?
+### Comment retirer un fichier de la zone de staging ?
 
 Cela dépend s'il s'agit d'un fichier qui vient d'être créé et qui n'est donc pas déjà versionné par git ou s'il s'agit d'une modification d'un fichier existant. Dans l'exemple précédent nous avons créé un fichier la commande est donc :
 

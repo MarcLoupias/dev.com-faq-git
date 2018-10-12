@@ -59,11 +59,11 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 - Comment annuler les modifications effectuées sur un fichier de la working directory ?
 - Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?
 
-## 7.3.4 [La zone de stagging](faq-7.3.4-zone-staging.md)
+## 7.3.4 [La zone de staging](faq-7.3.4-zone-staging.md)
 
-- Qu'est ce que la zone de stagging ?
-- Comment ajouter un fichier à la zone de stagging ?
-- Comment retirer un fichier de la zone de stagging ?
+- Qu'est ce que la zone de staging ?
+- Comment ajouter un fichier à la zone de staging ?
+- Comment retirer un fichier de la zone de staging ?
 
 ## 7.3.5 [Les commits](faq-7.3.5-les-commits.md)
 
