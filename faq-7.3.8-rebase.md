@@ -56,7 +56,7 @@ Si vous choisissez de `rebase` vous allez obtenir ceci :
 ```
 ---M1---M2---M3 master
               \            
-              B1---B2---B3 toto
+              B1'---B2'---B3' toto
 ```
 
 Le commit parent de `B1` était `M1` avant le `rebase`, il sera `M3` après.
@@ -64,6 +64,12 @@ Le commit parent de `B1` était `M1` avant le `rebase`, il sera `M3` après.
 De ce fait, git va rejouer chaque commit en respectant l'ordre de filiation, d'abord `B1`, puis `B2`, etc ...
 
 A chaque étape, si git rencontre un conflit, il vous laissera la main pour le résoudre.
+
+**Important**
+
+Les commits après rebase sont identifiés avec un prime (`'`), `B1` devient `B1'`, `B2` devient `B2'` etc ... 
+
+En effet git recrée de nouveaux commits même en l'absence d'un conflit, donc avec un timestamp différent, donc le SHA1 identifiant le commit est différent.
 
 ### Comment effectuer un `rebase` ?
 
