@@ -1,12 +1,12 @@
-# FAQ GIT pour developpez.com
+# FAQ Git pour developpez.com
 
 ## 7.2 Installation et configuration
 
-### Comment installer GIT sur Windows ?
+### Comment installer Git sur Windows ?
 
 Téléchargez le client git approprié depuis [la page officielle](https://git-scm.com/downloads), lancez l'installeur et suivez les instructions.
 
-### Comment connaitre la liste des commandes GIT ?
+### Comment connaitre la liste des commandes Git ?
 
 ```
 $ git help
@@ -60,13 +60,13 @@ to read about a specific subcommand or concept.
 
 ```
 
-### Comment connaitre la version de votre GIT ?
+### Comment connaitre la version de votre Git ?
 
 ```
 $ git version
 ```
 
-### Quels sont les fichiers de configuration de GIT ?
+### Quels sont les fichiers de configuration de Git ?
 
 Les fichiers de configuration de git sont les suivants (l'ordre ci-dessous correspond à l'ordre de lecture par git, la dernière valeur lue est la valeur prise en compte) :
 
@@ -75,7 +75,7 @@ Les fichiers de configuration de git sont les suivants (l'ordre ci-dessous corre
 3. global config (`%HOMEPATH%\.gitconfig`)
 4. local config (repository-specific `.git/config`)
 
-### Comment afficher la configuration courante de GIT ?
+### Comment afficher la configuration courante de Git ?
 
 ```
 $ git config --list

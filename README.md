@@ -10,22 +10,22 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 
 ## 7.1 [Généralités](faq-7.1-generalites.md)
 
-- Qu'est ce que GIT ?
-- Que signifie GIT ?
-- Où trouver de la documentation pour GIT ?
-- Où trouver le code source de GIT ?
-- Quelles sont les différences entre un SCM centralisé comme Subversion et un SCM décentralisé comme GIT ?
-- Qu'est-ce qu'un dépôt GIT ?
+- Qu'est ce que Git ?
+- Que signifie Git ?
+- Où trouver de la documentation pour Git ?
+- Où trouver le code source de Git ?
+- Quelles sont les différences entre un SCM centralisé comme Subversion et un SCM décentralisé comme Git ?
+- Qu'est-ce qu'un dépôt Git ?
 - Qu'est-ce qu'un remote ?
 - Que désignent les termes upstream et downstream ?
 
 ## 7.2 [Installation et configuration](faq-7.2-install-config.md)
 
-- Comment installer GIT sur Windows ?
-- Comment connaitre la liste des commandes GIT ?
-- Comment connaitre la version de votre GIT ?
-- Quels sont les fichiers de configuration de GIT ?
-- Comment afficher la configuration courante de GIT ?
+- Comment installer Git sur Windows ?
+- Comment connaitre la liste des commandes Git ?
+- Comment connaitre la version de votre Git ?
+- Quels sont les fichiers de configuration de Git ?
+- Comment afficher la configuration courante de Git ?
 - Comment exclure des fichiers ?
 - Comment changer son nom d'utilisateur ?
 - Comment changer son email ? 
