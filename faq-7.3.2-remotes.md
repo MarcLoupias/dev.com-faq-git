@@ -82,3 +82,11 @@ $ git merge origin/master
 L'exécution d'une commande `pull` peut donc nécessiter de résoudre des conflits puisqu'il s'agit d'un `merge`.
 
 ### Comment mettre à jour un remote ? (push)
+
+```
+$ git push origin toto
+```
+
+A pour effet de mettre à jour la branche `toto` sur le remote nommé `origin`.
+
+Si la branche n'existe pas sur le dépôt distant elle est créée.
