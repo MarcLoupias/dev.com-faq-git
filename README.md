@@ -57,6 +57,7 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 - Comment changer l'état de la working directory ?
 - Comment connaitre l'état de la working directory selon git ?
 - Comment annuler les modifications effectuées sur un fichier de la working directory ?
+- Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?
 
 ## 7.3.4 [La zone de stagging](faq-7.3.4-zone-staging.md)
 

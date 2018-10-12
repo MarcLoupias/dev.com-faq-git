@@ -53,3 +53,35 @@ $ git checkout -- nom-fichier.txt
 ```
 
 a pour effet de supprimer toutes les modifications effectuées dans le fichier.
+
+- Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?
+
+Vous obtenez ce genre de message après un `checkout` sur un commit ou sur un tag :
+
+```
+Note: checking out '0.4.14'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD est maintenant sur 2ef6cee... Version bump
+```
+
+La variable `HEAD` est un alias du commit de tête de la branche courante. Lorsque vous ajoutez des commits à la branche, la variable `HEAD` est mise à jour.
+
+En mode détaché ce ne sera plus le cas.
+
+Pour ajouter des commits au dépôt il est donc nécessaire de se trouver sur une branche, c'est le concept qui représente une ligne de développement.
+
+Une raison courante de vouloir `checkout` un tag est de vouloir créer un hotfix. Dans ce cas on va `checkout` le tag puis immédiatement créer une nouvelle branche :
+ 
+```
+$ git checkout 0.4.14
+$ git checkout -b hotfix/0.4.15
+```
