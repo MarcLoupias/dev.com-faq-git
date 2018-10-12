@@ -83,11 +83,12 @@ https://alm.developpez.com/faq/scm
 
 7.3.7 Les fusions de branches (merge)
 - Qu'est-ce qu'un merge ?
-- Comment merger une branche A dans une branche B ?
-- Comment annuler un merge en cours ?
-- Comment rollback un merge terminé ?
+- Comment merger une branche toto dans une branche master ?
+- Quelle est la différence entre merge fast-forward et un merge no-fast-forward ?
+- Comment annuler un merge terminé ?
 - Qu'est-ce qu'un conflit ?
 - Comment gérer un conflit ?
+- Comment annuler un merge en cours ?
 
 7.3.8 Réécriture de l'historique (rebase)
 - Qu'est-ce qu'un rebase ?
