@@ -36,7 +36,7 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 ## 7.3.1 [Initialisation d'un dépôt](faq-7.3.1-initialisation-repository.md)
 
 - Comment initialiser un dépôt ?
-### Comment initialiser un dépôt nu (*bare repository*) ?
+- Comment initialiser un dépôt nu (*bare repository*) ?
 - Comment cloner un dépôt ?
 - Comment connaitre l'état du dépôt ? 
 
