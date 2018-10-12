@@ -1,5 +1,9 @@
-7.3.5 Les commits
-- Qu'est ce qu'un commit ?
+# FAQ GIT pour developpez.com
+
+## 7.3.5 Les commits
+
+### Qu'est ce qu'un commit ?
+
 Un commit est une révision du code source. Il est identifié par une empreinte numérique générée par une fonction de hachage (algorithme SHA-1).
 
 Un commit est composé de meta-données et du contenu (le code source) à versionner.
@@ -26,7 +30,7 @@ Ainsi un commit bénéficie des propriétés des empreintes numériques :
 
 Pour plus de détails, on peut se référer à [la documentation officielle](https://git-scm.com/book/fr/v2/Les-tripes-de-Git-Plomberie-et-porcelaine) ou à [un tutoriel sur developpez.com](https://alm.developpez.com/tutoriel/fonctionnement-interne-de-git/).
 
-- Comment créer un commit ?
+### Comment créer un commit ?
 
 Il est nécessaire d'avoir au préalable ajouté des fichiers à l'index (zone de staging).
 
@@ -41,7 +45,7 @@ Si aucun fichier n'a été ajouté à l'index, il est possible de passer l'optio
 
 Une utilisation courante des options est : `git commit -am "message de commit"` ce qui permet de prendre toutes les modifications en cours et d'ajouter un message de commit dans le même temps.
 
-- Comment ajouter un message en créant un commit ?
+### Comment ajouter un message en créant un commit ?
 
 L'option `-m` permet d'ajouter un message.
 
@@ -51,7 +55,7 @@ Par exemple :
 $ git commit -m "message de commit"
 ```
 
-- Comment modifier le message d'un commit existant ?
+### Comment modifier le message d'un commit existant ?
 
 ```
 $ git commit --amend -m "nouveau message de commit"
@@ -59,7 +63,7 @@ $ git commit --amend -m "nouveau message de commit"
 
 Comme expliqué dans la première question, ceci a pour effet de modifier le sha1 du commit.
 
-- Comment supprimer le dernier commit de la branche courante sans perdre les modifications ?
+### Comment supprimer le dernier commit de la branche courante sans perdre les modifications ?
 
 ```
 $ git reset --soft HEAD^
@@ -67,7 +71,7 @@ $ git reset --soft HEAD^
 
 Les modifications qui étaient présentes dans le commit supprimé sont encore présente dans l'index.
 
-- Comment supprimer le dernier commit de la branche courante avec les modifications ?
+### Comment supprimer le dernier commit de la branche courante avec les modifications ?
 
 ```
 $ git reset --hard HEAD^
@@ -75,7 +79,7 @@ $ git reset --hard HEAD^
 
 Les modifications qui étaient présentes dans le commit supprimé sont supprimées.
 
-- Comment supprimer les "n" derniers commits de la branche courante sans perdre les modifications ?
+### Comment supprimer les "n" derniers commits de la branche courante sans perdre les modifications ?
 
 ```
 $ git reset --soft HEAD~3
@@ -83,7 +87,7 @@ $ git reset --soft HEAD~3
 
 Les 3 derniers commits sont supprimés. Les modifications des 3 derniers commits sont présentes dans l'index.
 
-- Comment supprimer les "n" derniers commits de la branche courante avec les modifications ?
+### Comment supprimer les "n" derniers commits de la branche courante avec les modifications ?
 
 ```
 $ git reset --hard HEAD~3
@@ -91,7 +95,7 @@ $ git reset --hard HEAD~3
 
 Les 3 derniers commits sont supprimés et les modifications qu'ils comportaient le sont avec. 
 
-- Comment ajouter un commit d'une branche A dans une branche B sans effectuer un merge ? (cherry-pick)
+### Comment ajouter un commit d'une branche A dans une branche B sans effectuer un merge ? (cherry-pick)
 
 Vous devez avoir checkout la branche de destination, puis vous exécutez un cherry-pick en lui passant en paramètre le hash du commit désiré.
 
@@ -102,7 +106,7 @@ $ git checkout master
 $ git cherry-pick 1234abcd
 ```
 
-- Comment ajouter un commit provenant d'une branche d'un autre repository à la branche courante de ce repository ? (cherry-pick)
+### Comment ajouter un commit provenant d'une branche d'un autre repository à la branche courante de ce repository ? (cherry-pick)
 
 L'astuce consiste à ajouter le repository source en tant que `remote` du repository courant et à `fetch` (et seulement `fetch`) ses branches.
 
@@ -115,7 +119,7 @@ $ git checkout master
 $ git cherry-pick 1234abcd
 ```
 
-- Comment annuler un commit existant ? (revert)
+### Comment annuler un commit existant ? (revert)
 
 C'est la bonne manière d'annuler un commit existant dans un historique qui a été publié. En effet une pratique essentielle est de ne jamais réécrire ou supprimer
 un historique qui a été publié et qui a donc pu être récupéré par un autre utilisateur.

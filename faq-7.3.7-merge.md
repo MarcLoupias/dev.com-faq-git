@@ -1,6 +1,8 @@
-7.3.7 Les fusions de branches (merge)
+# FAQ GIT pour developpez.com
 
-- Qu'est-ce qu'un merge ?
+## 7.3.7 Les fusions de branches (merge)
+
+### Qu'est-ce qu'un merge ?
 
 C'est l'action de fusionner une branche avec une autre, généralement d'une branche enfant vers une branche parente.
 
@@ -50,8 +52,7 @@ La branche `toto` qui n'a plus de raisons d'être peut être alors supprimée :
 M1---B1---B2---B3 master
 ```
 
-
-- Comment merger une branche toto dans une branche master ?
+### Comment merger une branche toto dans une branche master ?
 
 Il faut avoir checkout la branche de destination au préalable :
 
@@ -69,7 +70,7 @@ $ git merge toto
 
 C'est tout.
 
-- Quelle est la différence entre merge fast-forward et un merge non fast-forward ?
+### Quelle est la différence entre merge fast-forward et un merge non fast-forward ?
 
 Un `merge` fast-forward peut avoir lieu lorsque la branche parente n'a pas évolué depuis la création de la branche à fusionner.
 
@@ -141,7 +142,7 @@ Certains utilisateurs aiment conserver la visibilité de l'existance des branche
     B1---B2---B3 
 ```
 
-- Comment annuler un merge terminé ?
+### Comment annuler un merge terminé ?
 
 La solution la plus simple consiste à supprimer les commits sur la branche de destination. Par exemple dans cette situation :
 
@@ -171,13 +172,13 @@ On revient alors à la situation précédant la fusion :
    B1---B2---B3 toto 
 ```
 
-- Qu'est-ce qu'un conflit ?
+### Qu'est-ce qu'un conflit ?
 
 Un conflit apparait lors d'une fusion lorsque deux fichiers ont évolué sur la même ligne de code mais différemment.
 
 Git ne peut pas savoir où est la vérité, il demande donc à l'utilisateur de trancher en modifiant le fichier source à fusionner en ajoutant les deux versions possibles encadrées par des marqueurs.   
 
-- Comment gérer un conflit ?
+### Comment gérer un conflit ?
 
 Par exemple avec un conflit sur le fichier `index.html` lors d'une fusion de `toto` dans `master` on aurait :
 
@@ -189,6 +190,6 @@ Il convient ici de faire le tri et de supprimer ces marqueurs puis d'ajouter le 
 
 Pour terminer la résolution de conflits vous pouvez utiliser la commande `git merge --continue` si votre version de git est supérieure ou égale à la 2.12 sinon exécutez simplement un `git commit` sans aucune option.
 
-- Comment annuler un merge en cours ?
+### Comment annuler un merge en cours ?
 
 Pendant la résolution des conflits exécutez simplement un `git merge --abort`.

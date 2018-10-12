@@ -1,5 +1,8 @@
-7.3.6 Les branches 
-- Qu'est-ce qu'une branche ?
+# FAQ GIT pour developpez.com
+
+## 7.3.6 Les branches 
+
+### Qu'est-ce qu'une branche ?
 
 Conceptuellement, une branche est une ligne de développement dont le but est d'ajouter de nouveaux commits à l'arbre des commits constituants le repository.
  
@@ -13,7 +16,7 @@ Techniquement, une branche est une référence sur le dernier commit d'une séri
 
 Ainsi, manipuler une branche est une opération très rapide à exécuter puisqu'il s'agit d'un pointeur et non d'un container.
  
-- Comment lister les branches locales ?
+### Comment lister les branches locales ?
 
 ```
 $ git branch -l
@@ -21,7 +24,7 @@ $ git branch -l
 * master
 ```
 
-- Comment lister toutes les branches (locales, distantes, traquées, non-traquées) ?
+### Comment lister toutes les branches (locales, distantes, traquées, non-traquées) ?
 
 ```
 $ git remote show origin
@@ -39,7 +42,7 @@ $ git remote show origin
 
 ```
 
-- Comment créer une branche ?
+### Comment créer une branche ?
 
 ```
 $ git checkout -b <nom-branche>
@@ -49,7 +52,7 @@ Cette commande a pour effet une branche sur la base de celle actuellement active
 
 Cette création est évidemment seulement locale.
 
-- Comment créer une branche sur une repository distant ?
+### Comment créer une branche sur une repository distant ?
 
 Il faut créer la branche en local puis la pousser sur le repository distant :
 
@@ -58,7 +61,7 @@ $ git checkout -b <nom-branche>
 $ git push <nom-remote> <nom-branche>
 ```
 
-- Comment supprimer une branche ?
+### Comment supprimer une branche ?
 
 ```
 $ git branch -D <nom-branche>
@@ -66,19 +69,19 @@ $ git branch -D <nom-branche>
 
 L'option `-d` peut être utilisée à la place de l'option `-D` mais seulement si la branche a auparavant été `merge` dans la branche parente.
 
-- Comment supprimer une branche distante ?
+### Comment supprimer une branche distante ?
 
 ```
 $ git push <nom-remote> --delete <nom-branche> 
 ```
 
-- Comment renommer une branche ?
+### Comment renommer une branche ?
 
 ```
 $ git branch -m <nouveau-nom>
 ```
 
-- Comment comparer deux branches ?
+### Comment comparer deux branches ?
 
 Il y a deux axes de comparaison possibles, on peut vouloir comparer :
 
@@ -107,8 +110,7 @@ Dans le cas de `git diff` :
 - `..` permet de connaitre les différences de contenu entre les têtes (dernier commit, nommé souvent "tip" en anglais) des deux branches. 
 - `...` permet de connaitre les différences entre la tête de B et la "merge base" (le dernier commit commun dans l'arbre) commune avec A.
 
-
-- Comment comparer les historiques de 2 branches ?
+### Comment comparer les historiques de 2 branches ?
 
 Si je souhaite connaitre la liste des commits existants dans `release/v1.0.0` et qui n'existent pas dans `master` :
  
@@ -179,7 +181,7 @@ $ git log --oneline --decorate --left-right --graph release/v1.0.0...master
 
 ```
 
-- Comment comparer l'état de tous les fichiers présents dans deux branches ?
+### Comment comparer l'état de tous les fichiers présents dans deux branches ?
 
 ```
 $ git diff release/v1.0.0..master
@@ -222,7 +224,7 @@ $ git diff --stat release/v1.0.0..master
  27 files changed, 2027 insertions(+), 371 deletions(-)
 ```
 
-- Comment comparer l'état d'un fichier présent dans deux branches ?
+### Comment comparer l'état d'un fichier présent dans deux branches ?
 
 On ajoute simplement le chemin relatif du fichier à comparer :
 

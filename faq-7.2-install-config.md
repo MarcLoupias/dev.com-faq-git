@@ -1,9 +1,12 @@
-7.2 Installation et configuration
-- Comment installer GIT sur Windows ?
+# FAQ GIT pour developpez.com
+
+## 7.2 Installation et configuration
+
+### Comment installer GIT sur Windows ?
 
 Téléchargez le client git approprié depuis [la page officielle](https://git-scm.com/downloads), lancez l'installeur et suivez les instructions.
 
-- Comment connaitre la liste des commandes GIT ?
+### Comment connaitre la liste des commandes GIT ?
 
 ```
 $ git help
@@ -57,13 +60,13 @@ to read about a specific subcommand or concept.
 
 ```
 
-- Comment connaitre la version de votre GIT ?
+### Comment connaitre la version de votre GIT ?
 
 ```
 $ git version
 ```
 
-- Quels sont les fichiers de configuration de GIT ?
+### Quels sont les fichiers de configuration de GIT ?
 
 Les fichiers de configuration de git sont les suivants (l'ordre ci-dessous correspond à l'ordre de lecture par git, la dernière valeur lue est la valeur prise en compte) :
 
@@ -72,7 +75,7 @@ Les fichiers de configuration de git sont les suivants (l'ordre ci-dessous corre
 3. global config (`%HOMEPATH%\.gitconfig`)
 4. local config (repository-specific `.git/config`)
 
-- Comment afficher la configuration courante de GIT ?
+### Comment afficher la configuration courante de GIT ?
 
 ```
 $ git config --list
@@ -120,7 +123,7 @@ file:.git/config        core.filemode=false
 file:.git/config        core.bare=false
 ```
 
-- Comment exclure des fichiers ?
+### Comment exclure des fichiers ?
 
 Il existe 3 manières d'exclure des fichiers du champ de git :
 
@@ -130,19 +133,19 @@ Par repository: dans le fichier `.git/info/excludes`
 
 Par machine : au travers de la configuration utilisateur dans `~/.gitconfig`
 
-- Comment changer son nom d'utilisateur ?
+### Comment changer son nom d'utilisateur ?
 
 ```
 $ git config --global user.name "Your Name Comes Here"
 ```
 
-- Comment changer son email ? 
+### Comment changer son email ? 
 
 ```
 $ git config --global user.email you@yourdomain.example.com
 ```
 
-- Comment changer l'URL d'un dépôt distant ?
+### Comment changer l'URL d'un dépôt distant ?
 
 ```
 $ git remote set-url origin https://domain.tld/repo.git
