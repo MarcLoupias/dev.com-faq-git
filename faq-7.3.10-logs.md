@@ -18,4 +18,4 @@
 
 ### Comment afficher la liste des fichiers modifiés pour chaque commit du log ?
 
-### Comment trouver qui a modifié quelle ligne dans un fichier donné ? (blame)
+### Comment trouver qui a modifié quelle ligne dans un fichier donné ? (`blame`)

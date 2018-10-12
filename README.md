@@ -29,16 +29,16 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 - Comment exclure des fichiers ?
 - Comment changer son nom d'utilisateur ?
 - Comment changer son email ? 
-- Comment changer la push url ?
+- Comment changer l'URL d'un dépôt distant ?
 
 ## 7.3 Utilisation
 
 ## 7.3.1 [Initialisation d'un repository](faq-7.3.1-initialisation-repository.md)
 
-- Comment initialiser un repository
-- Comment initialiser un bare repository
-- Comment cloner un repository
-- Comment connaitre l'état du repository 
+- Comment initialiser un repository ?
+- Comment initialiser un bare repository ?
+- Comment cloner un repository ?
+- Comment connaitre l'état du repository ? 
 
 ## 7.3.2 [Les remotes](faq-7.3.2-remotes.md)
 
@@ -55,6 +55,8 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 
 - Qu'est-ce que la working directory ?
 - Comment changer l'état de la working directory ?
+- Comment connaitre l'état de la working directory selon git ?
+- Comment annuler les modifications effectuées sur un fichier de la working directory ?
 
 ## 7.3.4 [La zone de stagging](faq-7.3.4-zone-staging.md)
 
@@ -91,23 +93,23 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 - Comment comparer l'état de tous les fichiers présents dans deux branches ?
 - Comment comparer l'état d'un fichier présent dans deux branches ?
 
-## 7.3.7 [Les fusions de branches (merge)](faq-7.3.7-merge.md)
+## 7.3.7 [Les fusions de branches (`merge`)](faq-7.3.7-merge.md)
 
-- Qu'est-ce qu'un merge ?
-- Comment merger une branche toto dans une branche master ?
-- Quelle est la différence entre merge fast-forward et un merge no-fast-forward ?
-- Comment annuler un merge terminé ?
+- Qu'est-ce qu'un `merge` ?
+- Comment fusionner une branche `toto` dans une branche `master` ?
+- Quelle est la différence entre `merge` *fast-forward* et un `merge` *no-fast-forward* ?
+- Comment annuler une fusion terminée ?
 - Qu'est-ce qu'un conflit ?
 - Comment gérer un conflit ?
-- Comment annuler un merge en cours ?
+- Comment annuler une fusion en cours ?
 
-## 7.3.8 [Réécriture de l'historique (rebase)](faq-7.3.8-rebase.md)
+## 7.3.8 [Réécriture de l'historique (`rebase`)](faq-7.3.8-rebase.md)
 
-- Qu'est-ce qu'un rebase ?
-- Qu'est-ce qu'un rebase intéractif ?
-- Pourquoi effectuer un rebase ?
-- Pourquoi effectuer un rebase intéractif ?
-- Comment annuler un rebase en cours ?
+- Qu'est-ce qu'un `rebase` ?
+- Qu'est-ce qu'un `rebase` intéractif ?
+- Pourquoi effectuer un `rebase` ?
+- Pourquoi effectuer un `rebase` intéractif ?
+- Comment annuler un `rebase` en cours ?
 
 ## 7.3.9 [Les tags](faq-7.3.9-tags.md)
 
@@ -129,11 +131,11 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 - Comment filtrer le log sur la base des messages de commit ?
 - Comment filtrer le log sur la base de l'auteur des commits ?
 - Comment afficher la liste des fichiers modifiés pour chaque commit du log ?
-- Comment trouver qui a modifié quelle ligne dans un fichier donné ? (blame)
+- Comment trouver qui a modifié quelle ligne dans un fichier donné ? (`blame`)
 
 ## 7.4 [Outils](faq-7.4-outils.md)
 
-- github
-- gitlab
-- qu'elle est la différence entre une pull request (github) et une merge request (gitlab) ?
+- GitHub
+- GitLab
+- Qu'elle est la différence entre une pull request (GitHub) et une merge request (GitLab) ?
 

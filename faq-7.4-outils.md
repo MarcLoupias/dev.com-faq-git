@@ -2,8 +2,8 @@
 
 ## 7.4 Outils
 
-### github
+### GitHub
 
-### gitlab
+### GitLab
 
-### qu'elle est la différence entre une pull request (github) et une merge request (gitlab) ?
+### Qu'elle est la différence entre une pull request (GitHub) et une merge request (GitLab) ?
