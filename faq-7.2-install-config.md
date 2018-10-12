@@ -127,9 +127,9 @@ file:.git/config        core.bare=false
 
 Il existe 3 manières d'exclure des fichiers du champ de git :
 
-Par projet: créer un fichier `.gitignore` dans le repository
+Par projet: créer un fichier `.gitignore` dans le dépôt
 
-Par repository: dans le fichier `.git/info/excludes`
+Par dépôt: dans le fichier `.git/info/excludes`
 
 Par machine : au travers de la configuration utilisateur dans `~/.gitconfig`
 

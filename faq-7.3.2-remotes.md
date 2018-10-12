@@ -2,7 +2,7 @@
 
 ## 7.3.2 Les remotes
 
-### Comment lister les remotes d'un repository ?
+### Comment lister les remotes d'un dépôt ?
 
 ```
 $ git remote -v
@@ -12,7 +12,7 @@ origin https://www.domain.tld/git/repo.git (push)
 
 Un remote est désigné par 2 urls, une url de `fetch` (indique où tirer les modifications effectuées par les autres développeurs) et une url de `push` (indique où pousser ses propres modifications).
 
-Certaines organisations adoptent le forking model pour gérer la collaboration dans le projet. Un nouveau développeur clonera le projet depuis le repository central, forkera ensuite ce repository puis changera sa push url pour pousser sur son fork au lieu du repo central. Les modifications du fork vers le repo central seront effectuées au travers pull/merge request depuis l'outil web présent sur le repo central (github, gitlab, ...). Ce modèle a pour avantage de simplifier et de sécuriser fortement la gestion des droits en écriture sur le repository central.
+Certaines organisations adoptent le forking model pour gérer la collaboration dans le projet. Un nouveau développeur clonera le projet depuis le dépôt central, forkera ensuite ce dépôt puis changera sa push url pour pousser sur son fork au lieu du repo central. Les modifications du fork vers le repo central seront effectuées au travers pull/merge request depuis l'outil web présent sur le repo central (github, gitlab, ...). Ce modèle a pour avantage de simplifier et de sécuriser fortement la gestion des droits en écriture sur le dépôt central.
 
 ### Comment ajouter un remote ?
 
@@ -28,7 +28,7 @@ Où `<alias>` désigne le nom du `remote`.
 $ git remote show origin
 ```
 
-Affiche l'état du repository distant (fetch et push urls, liste des branches, si elles sont trackées ou non, branches locales configurées pour un pull et pour un push.
+Affiche l'état du dépôt distant (fetch et push urls, liste des branches, si elles sont trackées ou non, branches locales configurées pour un pull et pour un push.
 
 ### Comment supprimer un remote ?
 
@@ -36,7 +36,7 @@ Affiche l'état du repository distant (fetch et push urls, liste des branches, s
 $ git remote rm <remote>
 ```
 
-Où `remote` désigne le nom du repository distant.
+Où `remote` désigne le nom du dépôt distant.
 
 ### Comment renommer un remote ?
 
@@ -44,7 +44,7 @@ Où `remote` désigne le nom du repository distant.
 $ git remote rename <old> <new>
 ```
 
-Où `old` désigne le nom du repository distant à changer et `<new>` le nouveau nom à donner.
+Où `old` désigne le nom du dépôt distant à changer et `<new>` le nouveau nom à donner.
 
 Par exemple :
 
@@ -52,7 +52,7 @@ Par exemple :
 $ git remote rename origin dist
 ```
 
-A pour effet de modifier le nom du repository distant de 'origin' en 'dist'.
+A pour effet de modifier le nom du dépôt distant de 'origin' en 'dist'.
 
 ### Comment mettre à jour la représentation locale d'un remote ? (fetch)
 

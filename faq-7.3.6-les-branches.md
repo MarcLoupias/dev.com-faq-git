@@ -4,7 +4,7 @@
 
 ### Qu'est-ce qu'une branche ?
 
-Conceptuellement, une branche est une ligne de développement dont le but est d'ajouter de nouveaux commits à l'arbre des commits constituants le repository.
+Conceptuellement, une branche est une ligne de développement dont le but est d'ajouter de nouveaux commits à l'arbre des commits constituants le dépôt.
  
 C'est depuis une branche que l'utilisateur :
 
@@ -52,9 +52,9 @@ Cette commande a pour effet une branche sur la base de celle actuellement active
 
 Cette création est évidemment seulement locale.
 
-### Comment créer une branche sur une repository distant ?
+### Comment créer une branche sur une dépôt distant ?
 
-Il faut créer la branche en local puis la pousser sur le repository distant :
+Il faut créer la branche en local puis la pousser sur le dépôt distant :
 
 ```
 $ git checkout -b <nom-branche>

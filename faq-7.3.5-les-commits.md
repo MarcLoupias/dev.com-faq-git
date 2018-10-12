@@ -106,11 +106,11 @@ $ git checkout master
 $ git cherry-pick 1234abcd
 ```
 
-### Comment ajouter un commit provenant d'une branche d'un autre repository à la branche courante de ce repository ? (cherry-pick)
+### Comment ajouter un commit provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt ? (cherry-pick)
 
-L'astuce consiste à ajouter le repository source en tant que `remote` du repository courant et à `fetch` (et seulement `fetch`) ses branches.
+L'astuce consiste à ajouter le dépôt source en tant que `remote` du dépôt courant et à `fetch` (et seulement `fetch`) ses branches.
 
-Par exemple pour ajouter à `master` le commit `1234abcd` existant sur le repository `boubou` de l'utilisateur `toto` la marche à suivre est la suivante : 
+Par exemple pour ajouter à `master` le commit `1234abcd` existant sur le dépôt `boubou` de l'utilisateur `toto` la marche à suivre est la suivante : 
 
 ```
 $ git remote add boubou git://github.com/toto/boubou.git

@@ -15,7 +15,7 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 - Où trouver de la documentation pour GIT ?
 - Où trouver le code source de GIT ?
 - Quelles sont les différences entre un SCM centralisé comme Subversion et un SCM décentralisé comme GIT ?
-- Qu'est-ce qu'un repository GIT ?
+- Qu'est-ce qu'un dépôt GIT ?
 - Qu'est-ce qu'un remote ?
 - Que désignent les termes upstream et downstream ?
 
@@ -33,16 +33,16 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 
 ## 7.3 Utilisation
 
-## 7.3.1 [Initialisation d'un repository](faq-7.3.1-initialisation-repository.md)
+## 7.3.1 [Initialisation d'un dépôt](faq-7.3.1-initialisation-repository.md)
 
-- Comment initialiser un repository ?
-- Comment initialiser un bare repository ?
-- Comment cloner un repository ?
-- Comment connaitre l'état du repository ? 
+- Comment initialiser un dépôt ?
+### Comment initialiser un dépôt nu (*bare repository*) ?
+- Comment cloner un dépôt ?
+- Comment connaitre l'état du dépôt ? 
 
 ## 7.3.2 [Les remotes](faq-7.3.2-remotes.md)
 
-- Comment lister les remotes d'un repository ?
+- Comment lister les remotes d'un dépôt ?
 - Comment ajouter un remote ?
 - Comment inspecter un remote ?
 - Comment supprimer un remote ?
@@ -75,7 +75,7 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 - Comment supprimer les "n" derniers commits de la branche courante sans perdre les modifications ?
 - Comment supprimer les "n" derniers commits de la branche courante avec les modifications ?
 - Comment ajouter un commit d'une branche A dans une branche B sans effectuer un merge ? (cherry-pick)
-- Comment ajouter un commit provenant d'une branche d'un autre repository à la branche courante de ce repository ? (cherry-pick)
+- Comment ajouter un commit provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt ? (cherry-pick)
 - Comment annuler un commit existant ? (revert)
 
 ## 7.3.6 [Les branches](faq-7.3.6-les-branches.md) 
@@ -84,7 +84,7 @@ A insérer avec les autres FAQ des SCM : https://alm.developpez.com/faq/scm
 - Comment lister les branches locales ?
 - Comment lister toutes les branches (locales, distantes, traquées, non-traquées) ?
 - Comment créer une branche ?
-- Comment créer une branche sur une repository distant ?
+- Comment créer une branche sur une dépôt distant ?
 - Comment supprimer une branche ?
 - Comment supprimer une branche distante ?
 - Comment renommer une branche ?

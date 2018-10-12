@@ -4,7 +4,7 @@
 
 ### Qu'est-ce que la working directory ?
 
-Littérallement, il s'agit du répertoire de travail de votre repository.
+Littérallement, il s'agit du répertoire de travail de votre dépôt.
 
 Il expose l'état actuel d'une branche, d'un commit ou d'un tag.
 

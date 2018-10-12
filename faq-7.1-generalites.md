@@ -26,24 +26,24 @@ Elles sont trop nombreuses pour être listées dans une FAQ mais d'une manière 
     - tout est fait offline
     - il n'y a pas besoin d'un serveur central pour partager du code entre 2 développeurs
 
-### Qu'est-ce qu'un repository GIT ?
+### Qu'est-ce qu'un dépôt GIT ?
 
-La traduction française appropriée est *dépôt*. Il s'agit d'un répertoire versionné par git. Ce répertoire contient à sa racine un répertoire `.git` contenant toutes les données liées à ce repository. Un repository git est donc autoporté via ce répertoire et peut être déplacé depuis le répertoire racine (pour backup ou autre). Aucune information nécessaire à l'usage du repository n'est stockée à l'extérieur.
+La traduction française appropriée de *repository* est *dépôt*. Il s'agit d'un répertoire versionné par git. Ce répertoire contient à sa racine un répertoire `.git` contenant toutes les données liées à ce dépôt. Un dépôt git est donc autoporté via ce répertoire et peut être déplacé depuis le répertoire racine (pour backup ou autre). Aucune information nécessaire à l'usage du dépôt n'est stockée à l'extérieur.
 
-Un repository git correspond généralement à un projet unique mais ce n'est pas forcément le cas. Certaines organisations utilisent un repository unique pour gérer les codes sources de tous leurs projets. Cette stratégie est nommée la "monorepo strategy". C'est notamment le cas de Google qui a expliqué en détail sa stratégie lors d'[une conférence en 2015](https://www.youtube.com/watch?v=W71BTkUbdqE).
+Un dépôt git correspond généralement à un projet unique mais ce n'est pas forcément le cas. Certaines organisations utilisent un dépôt unique pour gérer les codes sources de tous leurs projets. Cette stratégie est nommée la "monorepo strategy". C'est notamment le cas de Google qui a expliqué en détail sa stratégie lors d'[une conférence en 2015](https://www.youtube.com/watch?v=W71BTkUbdqE).
 
-Un repository est donc composé d'un répertoire `.git` contenant toutes les meta-données du repository et de la working directory reflétant l'état actuel `checkout` par git (un commit, une branche ou un tag).
+Un dépôt est donc composé d'un répertoire `.git` contenant toutes les meta-données du dépôt et de la working directory reflétant l'état actuel `checkout` par git (un commit, une branche ou un tag).
 
 ### Qu'est-ce qu'un remote ?
 
-Il s'agit d'un bare repository servant d'espace de partage. Il peut être local (si vous exposez vos sources depuis votre propre machine) ou distant. Il est généralement accompagné d'un client web pour fournir une solution de gestion de projet intégrée (github, gitlab, gitblit, ...).
+Il s'agit d'un dépôt nu (*bare repository* en anglais) servant d'espace de partage. Il peut être local (si vous exposez vos sources depuis votre propre machine) ou distant. Il est généralement accompagné d'un client web pour fournir une solution de gestion de projet intégrée (github, gitlab, gitblit, ...).
 
 ### Que désignent les termes upstream et downstream ?
 
 Ces termes sont souvent employés dans les conversations en anglais à propos de git et également dans sa documentation officielle. 
 
-*upstream* désigne le repository distant depuis lequel vous tirez des informations vers votre repository local (clone, pull, fetch, ...) ou vers lequel vous poussez des informations (push).
+*upstream* désigne le dépôt distant depuis lequel vous tirez des informations vers votre dépôt local (clone, pull, fetch, ...) ou vers lequel vous poussez des informations (push).
 
 *downstream* désigne tous les repositories qui dépendent d'un *upstream* pour leur synchronisation.
 
-Si par exemple vous avez un projet hébergé sur un site comme gihub ou gitlab, le repository sur ce site est l'*upstream* et chaque repository cloné depuis l'*upstream* est un *downstream*.
+Si par exemple vous avez un projet hébergé sur un site comme gihub ou gitlab, le dépôt sur ce site est l'*upstream* et chaque dépôt cloné depuis l'*upstream* est un *downstream*.
