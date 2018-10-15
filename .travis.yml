@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "6"
+  - "8"
+  - "10"
+before_install:
+  - npm install -g npm@6
+install:
+  - npm install
+  - npm --version
+script:
+  - npm test
+after_failure: "cat /home/travis/build/MarcLoupias/my-cv/npm-debug.log"
