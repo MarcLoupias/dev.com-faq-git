@@ -1,4 +1,4 @@
-# FAQ GIT pour developpez.com
+# FAQ Git pour developpez.com
 
 ## 7.3.10 Les logs
 
@@ -16,7 +16,7 @@ C'est un outil indispensable pour comprendre l'historique, il est également tr�
 
 Dans sa forme la plus simple :
 
-```
+```bash
 $ git log
 
 commit df76163ff6c90e8c62c588a06d82fb3d3f3aca66
@@ -42,7 +42,7 @@ Author: marlou <pro@marc-loupias.fr>
 Date:   Thu Oct 4 10:21:06 2018 +0200
 
     moving to an up-to-date and actively maintained package to open the browser
-    
+
     - open@0.0.5 removed
     - opn@5.4.0 sindresorhus package added
 
@@ -52,53 +52,48 @@ On navigue avec les flèches du clavier et on sort en appuyant sur la touche `q`
 
 ### Comment afficher le log sous forme graphique dans la console ?
 
-```
-$ git log --graph
+```bash
+git log --graph
 ```
 
 ### Comment afficher le log sur une seule ligne pour chaque commit ?
 
-```
-$ git log --oneline
+```bash
+git log --oneline
 ```
 
 ### Comment afficher un changelog entre deux tags ?
 
-```
-$ git log 0.11.0..0.12.0 --oneline
+```bash
+git log 0.11.0..0.12.0 --oneline
 ```
 
 ### Comment filtrer le log sur la base des messages de commit ?
 
-```
-$ git log --grep 'regex'
+```bash
+git log --grep 'regex'
 ```
 
 Le contenu de `'regex'` doit être une regex POSIX valide.
 
 ### Comment filtrer le log sur la base de l'auteur des commits ?
 
-```
-$ git log --author="robert"
+```bash
+git log --author="robert"
 ```
 
 ### Comment afficher la liste des fichiers modifiés pour chaque commit du log ?
 
-```
-$ git log --stat
+```bash
+git log --stat
 ```
 
 ### Comment trouver qui a modifié quelle ligne dans un fichier donné ? (`blame`)
 
 La commande `blame` permet d'explorer l'historique à l'intérieur d'un fichier.
 
-```
+```bash
 $ git blame sha1_file.c
-```
-
-Le résultat ressemble à ceci :
-
-```
 0fcfd160 (Linus Torvalds  2005-04-18 13:04:43 -0700    8)  */
 0fcfd160 (Linus Torvalds  2005-04-18 13:04:43 -0700    9) #include "cache.h"
 1f688557 (Junio C Hamano  2005-06-27 03:35:33 -0700   10) #include "delta.h"

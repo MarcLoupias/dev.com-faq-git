@@ -1,4 +1,4 @@
-# FAQ GIT pour developpez.com
+# FAQ Git pour developpez.com
 
 ## 7.3.8 Réécriture de l'historique (`rebase`)
 
@@ -12,15 +12,15 @@ De ce fait il ne faut **jamais** `rebase` une branche qui a été publiée quelq
 
 ### Pourquoi effectuer un `rebase` ?
 
-Principalement pour conserver un historique propre et lisible. 
+Principalement pour conserver un historique propre et lisible.
 
 La bonne pratique est de systématiquement `rebase` une branche de travail avant de chercher à la fusionner avec une branche de collaboration (nommée généralement `master`).
 
 Prenons la situation suivante :
 
-```
+```text
 ---M1 master
-   \            
+   \
    B1---B2---B3 toto
 ```
 
@@ -29,8 +29,8 @@ Dans ce cas de figure vous avez créé une branche `toto` sur la base d'une bran
 Vous avez fini de travailler et vous allez fusionner votre branche avec `master`.
 
 Or, d'autres utilisateurs ont fait avancé `master` et la situation sur le dépôt distant est en réalité :
- 
-```
+
+```text
 ---M1---M2---M3 origin/master  
 ```
 
@@ -38,58 +38,56 @@ Si vous fusionnez en l'état vous ne pourrez pas obtenir un `merge` fast-forward
 
 Que vous fassiez un `rebase` ou non vous allez d'abord devoir récupérer les modifications du dépôt distant :
 
-```
-$ git checkout master
-$ git pull origin master
+```bash
+git checkout master
+git pull origin master
 ```
 
 Ceci fait votre historique local est désormais :
 
-```
+```text
 ---M1---M2---M3 master
-   \            
+   \
    B1---B2---B3 toto
 ```
 
 Si vous choisissez de `rebase` vous allez obtenir ceci :
 
-```
+```text
 ---M1---M2---M3 master
-              \            
+              \
               B1'---B2'---B3' toto
 ```
 
 Le commit parent de `B1` était `M1` avant le `rebase`, il sera `M3` après.
 
-De ce fait, git va rejouer chaque commit en respectant l'ordre de filiation, d'abord `B1`, puis `B2`, etc ...
+De ce fait, Git va rejouer chaque commit en respectant l'ordre de filiation, d'abord `B1`, puis `B2`, etc ...
 
-A chaque étape, si git rencontre un conflit, il vous laissera la main pour le résoudre.
+A chaque étape, si Git rencontre un conflit, il vous laissera la main pour le résoudre.
 
-**Important**
+**Important** : Les commits après `rebase` sont identifiés avec un prime (`'`), `B1` devient `B1'`, `B2` devient `B2'` etc ...
 
-Les commits après rebase sont identifiés avec un prime (`'`), `B1` devient `B1'`, `B2` devient `B2'` etc ... 
-
-En effet git recrée de nouveaux commits même en l'absence d'un conflit, donc avec un timestamp différent, donc le SHA1 identifiant le commit est différent.
+En effet Git recrée de nouveaux commits même en l'absence d'un conflit, donc avec un timestamp différent, donc le SHA1 identifiant le commit est différent.
 
 ### Comment effectuer un `rebase` ?
 
 Commencez par récupérer l'état de la branche parente sur le dépôt distant :
 
-```
-$ git checkout master
-$ git pull origin master
+```bash
+git checkout master
+git pull origin master
 ```
 
 Ensuite placez vous sur la branche à `rebase` et exécutez-le (la commande `rebase` prend en argument la branche servant de base, c'est à dire la branche parente) :
 
-```
-$ git checkout toto
-$ git rebase master
+```bash
+git checkout toto
+git rebase master
 ```
 
 ### Qu'est-ce qu'un `rebase` intéractif ?
 
-C'est un rebase étendu qui va vous permettre de définir quelle opération effectuer à chaque commit de votre branche subissant le `rebase`.
+C'est un `rebase` étendu qui va vous permettre de définir quelle opération effectuer à chaque commit de votre branche subissant le `rebase`.
 
 Les options à chaque étape sont les suivantes :
 
@@ -113,19 +111,19 @@ Il suffit d'ajouter le paramètre `-i` à la commande et d'y adjoindre la profon
 
 Par exemple :
 
-```
-$ git rebase -i HEAD~3
+```bash
+git rebase -i HEAD~3
 ```
 
 Aura pour effet de `rebase` les 3 derniers commits de votre branche.
 
-L'exécution de cette commande entraine l'ouverture d'un éditeur de texte dans votre shell, sous Windows avec GitBash c'est [VIM](https://www.vim.org/), sur Ubuntu [nano](https://www.nano-editor.org/).
+L'exécution de cette commande entraine l'ouverture d'un éditeur de texte dans votre shell, sous Windows avec Git BASH c'est [VIM](https://www.vim.org/), sur Ubuntu [nano](https://www.nano-editor.org/).
 
 L'éditeur de texte contient un fichier de configuration du `rebase` à effectuer, pour dire à chaque étape quelle opération vous souhaitez effectuez.
 
 Par défaut on obtient `pick` pour chaque commit, par exemple :
 
-```
+```text
 pick d1fdf88 cypress - video recording on
 pick b065479 travis and cypress - some fix in e2e tests + baseUrl conf + http-server devDeps + travis conf
 pick 933cf95 migration from old webapp to jsonresume generated website
@@ -151,11 +149,11 @@ pick 933cf95 migration from old webapp to jsonresume generated website
 
 ```
 
-Il suffit de changer la commande à effectuer, d'enregistrer ce fichier et de quitter l'éditeur et git démarrera l'opération de `rebase` intéractif.
+Il suffit de changer la commande à effectuer, d'enregistrer ce fichier et de quitter l'éditeur et Git démarrera l'opération de `rebase` intéractif.
 
 Si par exemple je veux changer les messages de commit des 3 commits de ma branche je vais configurer ainsi :
 
-```
+```text
 reword d1fdf88 cypress - video recording on
 reword b065479 travis and cypress - some fix in e2e tests + baseUrl conf + http-server devDeps + travis conf
 reword 933cf95 migration from old webapp to jsonresume generated website
@@ -166,14 +164,14 @@ reword 933cf95 migration from old webapp to jsonresume generated website
 
 ```
 
-Ceci fait, à chaque étape du `rebase` git me proposera de saisir un nouveau message de commit via l'éditeur de texte du shell.
+Ceci fait, à chaque étape du `rebase` Git me proposera de saisir un nouveau message de commit via l'éditeur de texte du shell.
 
 ### Comment annuler un `rebase` en cours ?
 
 Comme pour annuler une fusion :
 
-```
-$ git rebase --abort
+```bash
+git rebase --abort
 ```
 
 Cette commande fonctionne pour le `rebase` standard comme pour le `rebase` intéractif.
@@ -182,10 +180,10 @@ Cette commande fonctionne pour le `rebase` standard comme pour le `rebase` inté
 
 Comme pour annuler une fusion.
 
-Une fois les conflits traités et ajoutés à l'index il vous suffira de dire à git de poursuivre le `rebase` (surtout pas de commit !)
+Une fois les conflits traités et ajoutés à l'index il vous suffira de dire à Git de poursuivre le `rebase` (surtout pas de commit !)
 
-```
-$ git rebase --continue
+```bash
+git rebase --continue
 ```
 
 Vous pouvez très bien obtenir des conflits à chaque étape, tout dépend des modifications effectuez par vous et les autres utilisateurs.

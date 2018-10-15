@@ -1,32 +1,31 @@
-# FAQ GIT pour developpez.com
+# FAQ Git pour developpez.com
 
-## 7.3.6 Les branches 
+## 7.3.6 Les branches
 
 ### Qu'est-ce qu'une branche ?
 
 Conceptuellement, une branche est une ligne de développement dont le but est d'ajouter de nouveaux commits à l'arbre des commits constituants le dépôt.
- 
+
 C'est depuis une branche que l'utilisateur :
 
 - modifie la working directory (modification des sources)
 - ajoute à l'index ces modifications
 - et qu'il crée des commits
 
-Techniquement, une branche est une référence sur le dernier commit d'une série de commits. Tous les commits descendants font donc parti de la branche. 
+Techniquement, une branche est une référence sur le dernier commit d'une série de commits. Tous les commits descendants font donc parti de la branche.
 
 Ainsi, manipuler une branche est une opération très rapide à exécuter puisqu'il s'agit d'un pointeur et non d'un container.
- 
+
 ### Comment lister les branches locales ?
 
-```
+```bash
 $ git branch -l
-
 * master
 ```
 
 ### Comment lister toutes les branches (locales, distantes, traquées, non-traquées) ?
 
-```
+```bash
 $ git remote show origin
 
 * distante origin
@@ -44,8 +43,8 @@ $ git remote show origin
 
 ### Comment créer une branche ?
 
-```
-$ git checkout -b <nom-branche>
+```bash
+git checkout -b <nom-branche>
 ```
 
 Cette commande a pour effet une branche sur la base de celle actuellement active puis de `checkout` la branche nouvellement créée (la rendre active).
@@ -56,30 +55,34 @@ Cette création est évidemment seulement locale.
 
 Il faut créer la branche en local puis la pousser sur le dépôt distant :
 
-```
-$ git checkout -b <nom-branche>
-$ git push <nom-remote> <nom-branche>
+```bash
+git checkout -b <nom-branche>
+git push <nom-remote> <nom-branche>
 ```
 
 ### Comment supprimer une branche ?
 
-```
-$ git branch -D <nom-branche>
+```bash
+git branch -D <nom-branche>
 ```
 
 L'option `-d` peut être utilisée à la place de l'option `-D` mais seulement si la branche a auparavant été `merge` dans la branche parente.
 
 ### Comment supprimer une branche distante ?
 
+```bash
+git push <nom-remote> --delete <nom-branche>
 ```
-$ git push <nom-remote> --delete <nom-branche> 
-```
+
+La branche à supprimer doit avoir été fusionnée dans son parent sinon la suppression sera refusée.
 
 ### Comment renommer une branche ?
 
+```bash
+git branch -m <nouveau-nom>
 ```
-$ git branch -m <nouveau-nom>
-```
+
+Ne fonctionnera pas si `<nouveau-nom>` est déjà utilisé pour un nom de branche.
 
 ### Comment comparer deux branches ?
 
@@ -87,18 +90,18 @@ Il y a deux axes de comparaison possibles, on peut vouloir comparer :
 
 - les séries de commits des branches (les historiques des commits)
 - l'état des fichiers (les contenus des commits)
- 
-La première question est donc d'abord de savoir ce que l'on cherche à comparer. 
+
+La première question est donc d'abord de savoir ce que l'on cherche à comparer.
 
 Pour comparer les historiques de 2 branches, on se réfèrera à la commande `git log`, pour comparer l'état des fichiers on se réfèrera à la commande `git diff`.
 
-La deuxième question est de savoir comment comparer les branches. 
+La deuxième question est de savoir comment comparer les branches.
 
 Ceci est déterminé par les "range operator" "double dot" (`..`) et "triple dot" (`...`).
 
-L'usage se fait de cette manière : `$ git log A..B` ou `$ git diff A..B`.
+L'usage se fait de cette manière : `git log A..B` ou `git diff A..B`.
 
-Attention, selon la commande utilisée (log ou diff), la sémantique des opérateurs est différente.
+Attention, selon la commande utilisée (`log` ou `diff`), la sémantique des opérateurs est différente.
 
 Dans le cas de `git log` :
 
@@ -107,30 +110,30 @@ Dans le cas de `git log` :
 
 Dans le cas de `git diff` :
 
-- `..` permet de connaitre les différences de contenu entre les têtes (dernier commit, nommé souvent "tip" en anglais) des deux branches. 
+- `..` permet de connaitre les différences de contenu entre les têtes (dernier commit, nommé souvent "tip" en anglais) des deux branches.
 - `...` permet de connaitre les différences entre la tête de B et la "merge base" (le dernier commit commun dans l'arbre) commune avec A.
 
 ### Comment comparer les historiques de 2 branches ?
 
 Si je souhaite connaitre la liste des commits existants dans `release/v1.0.0` et qui n'existent pas dans `master` :
- 
-```
-$ git log release/v1.0.0..master
+
+```bash
+git log release/v1.0.0..master
 ```
 
 Pour connaitre la liste des commits existants dans `master` et qui n'existent pas dans `release/v1.0.0`, on inverse simplement l'ordre :
 
-```
-$ git log master..release/v1.0.0
+```bash
+git log master..release/v1.0.0
 ```
 
-Certaines options de la commande log sont très pratiques pour affiner l'affichage brut de `git log`, elles peuvent être combinées :
+Certaines options de la commande `log` sont très pratiques pour affiner l'affichage brut de `git log`, elles peuvent être combinées :
 
 `--oneline` permet de limiter l'affichage de chaque commit sur une seule ligne.
 
 `--stat` affiche la liste des fichiers modifiés et le nombre d'ajouts et suppressions, par ex :
 
-```
+```bash
 $ git log --oneline --stat release/v1.0.0..master
 
 df76163 Logs the correct path to jsonresume.json
@@ -146,7 +149,7 @@ e9a998f update superagent from 2.+ to 3.+
 
 Dans le cas de l'usage de l'opérateur triple dot (`...`), l'ajout des options `--left-right`, `--decorate` et `--graph` permettent de rendre plus lisible le résultat.
 
-`--left-right` ajoute à chaque ligne un `<` ou un `>` selon si la ligne fait référence à la première ou à la deuxième branche. 
+`--left-right` ajoute à chaque ligne un `<` ou un `>` selon si la ligne fait référence à la première ou à la deuxième branche.
 
 `--decorate` affiche clairement les "refs" (tags, branches, `HEAD`) entre parenthèses après le SHA1 des commits.
 
@@ -154,7 +157,7 @@ Dans le cas de l'usage de l'opérateur triple dot (`...`), l'ajout des options `
 
 Par exemple :
 
-```
+```bash
 $ git log --oneline --decorate --left-right --graph release/v1.0.0...master
 
 > 332d9e9 (HEAD -> master, origin/master) Fix for themes and version bump
@@ -174,7 +177,7 @@ $ git log --oneline --decorate --left-right --graph release/v1.0.0...master
 > |   eef87b2 Merge pull request #273 from jouk0/patch-1
 |\ \  
 | |/  
-|/|   
+|/|
 | > fa5130e Updated resume.json path change on the process arg
 |/  
 > ed2106d Added https to all external requests
@@ -183,15 +186,15 @@ $ git log --oneline --decorate --left-right --graph release/v1.0.0...master
 
 ### Comment comparer l'état de tous les fichiers présents dans deux branches ?
 
-```
-$ git diff release/v1.0.0..master
+```bash
+git diff release/v1.0.0..master
 ```
 
-Cet affichage risque d'être assez indigeste si vous avez beaucoup de fichiers et de différences. 
+Cet affichage risque d'être assez indigeste si vous avez beaucoup de fichiers et de différences.
 
 Une première étape pour trier pourrait être de ne pas afficher les différences en tant que telles mais de listes les fichiers et le nombre de différences qu'ils contiennent avec l'option `--stat` :
 
-```
+```bash
 $ git diff --stat release/v1.0.0..master
 
  .env                              |    2 +-
@@ -228,6 +231,6 @@ $ git diff --stat release/v1.0.0..master
 
 On ajoute simplement le chemin relatif du fichier à comparer :
 
-```
-$ git diff release/v1.0.0..master lib/builder/index.js
+```bash
+git diff release/v1.0.0..master lib/builder/index.js
 ```

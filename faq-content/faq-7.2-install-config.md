@@ -4,17 +4,12 @@
 
 ### Comment installer Git sur Windows ?
 
-Téléchargez le client git approprié depuis [la page officielle](https://git-scm.com/downloads), lancez l'installeur et suivez les instructions.
+Téléchargez le client Git approprié depuis [la page officielle](https://git-scm.com/downloads), lancez l'installeur et suivez les instructions.
 
 ### Comment connaitre la liste des commandes Git ?
 
-```
+```bash
 $ git help
-```
-
-Donne comme sortie :
-
-```
 usage: git [--version] [--help] [-C <path>] [-c name=value]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
@@ -57,18 +52,18 @@ collaborate (see also: git help workflows)
 'git help -a' and 'git help -g' list available subcommands and some
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
-
 ```
 
 ### Comment connaitre la version de votre Git ?
 
-```
+```bash
 $ git version
+git version 2.19.1
 ```
 
 ### Quels sont les fichiers de configuration de Git ?
 
-Les fichiers de configuration de git sont les suivants (l'ordre ci-dessous correspond à l'ordre de lecture par git, la dernière valeur lue est la valeur prise en compte) :
+Les fichiers de configuration de Git sont les suivants (l'ordre ci-dessous correspond à l'ordre de lecture par Git, la dernière valeur lue est la valeur prise en compte) :
 
 1. `C:\ProgramData\Git\config`
 2. system config (e.g. `C:\Program Files\Git\mingw64\etc\gitconfig`)
@@ -77,55 +72,44 @@ Les fichiers de configuration de git sont les suivants (l'ordre ci-dessous corre
 
 ### Comment afficher la configuration courante de Git ?
 
-```
+```bash
 $ git config --list
-```
-
-Affiche la configuration sous cette forme : 
-
-```
-core.symlinks=false
-core.autocrlf=true
-core.fscache=true
-color.diff=auto
-color.status=auto
-color.branch=auto
-color.interactive=true
-help.format=html
+user.name=marlou
+user.email=pro@marc-loupias.fr
+core.autocrlf=false
+core.excludesfile=/home/marco/.gitignore_global
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/MarcLoupias/dev.com-faq-git.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
 ```
 
 L'option `--show-origin` permet d'afficher en face d'une option dans quel fichier de configuration la configuration est définie.
 
-```
+```bash
 $ git config --list --show-origin
-```
-
-Donne en sortie :
-
-```
-file:"C:\\ProgramData/Git/config"       core.symlinks=false
-file:"C:\\ProgramData/Git/config"       core.autocrlf=true
-file:"C:\\ProgramData/Git/config"       core.fscache=true
-file:"C:\\ProgramData/Git/config"       color.diff=auto
-file:"C:\\ProgramData/Git/config"       color.status=auto
-file:"C:\\ProgramData/Git/config"       color.branch=auto
-file:"C:\\ProgramData/Git/config"       color.interactive=true
-file:"C:\\ProgramData/Git/config"       help.format=html
-file:"C:\\ProgramData/Git/config"       http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
-file:"C:\\ProgramData/Git/config"       diff.astextplain.textconv=astextplain
-file:"C:\\ProgramData/Git/config"       rebase.autosquash=true
-file:"C:\\Program Files\\Git\\mingw64/etc/gitconfig"    credential.helper=manager
-file:C:/Users/robert/.gitconfig  user.name=rob
-file:C:/Users/robert/.gitconfig  user.email=me@robert.tld
-file:C:/Users/robert/.gitconfig  core.autocrlf=false
+file:/home/marco/.gitconfig     user.name=marlou
+file:/home/marco/.gitconfig     user.email=pro@marc-loupias.fr
+file:/home/marco/.gitconfig     core.autocrlf=false
+file:/home/marco/.gitconfig     core.excludesfile=/home/marco/.gitignore_global
 file:.git/config        core.repositoryformatversion=0
-file:.git/config        core.filemode=false
+file:.git/config        core.filemode=true
 file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        remote.origin.url=https://github.com/MarcLoupias/dev.com-faq-git.git
+file:.git/config        remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config        branch.master.remote=origin
+file:.git/config        branch.master.merge=refs/heads/master
+
 ```
 
 ### Comment exclure des fichiers ?
 
-Il existe 3 manières d'exclure des fichiers du champ de git :
+Il existe 3 manières d'exclure des fichiers du champ de Git :
 
 Par projet: créer un fichier `.gitignore` dans le dépôt
 
@@ -135,30 +119,30 @@ Par machine : au travers de la configuration utilisateur dans `~/.gitconfig`
 
 ### Comment changer son nom d'utilisateur ?
 
-```
-$ git config --global user.name "Your Name Comes Here"
+```bash
+git config --global user.name "votre nom"
 ```
 
-### Comment changer son email ? 
+### Comment changer son email ?
 
-```
-$ git config --global user.email you@yourdomain.example.com
+```bash
+git config --global user.email moi@domaine.tld
 ```
 
 ### Comment changer l'URL d'un dépôt distant ?
 
-```
-$ git remote set-url origin https://domain.tld/repo.git
+```bash
+$ git remote set-url origin https://domaine.tld/repo.git
 # ou
-$ git remote add origin https://domain.tld/repo.git
+$ git remote add origin https://domaine.tld/repo.git
 ```
 
 A pour effet de changer l'url pour le `fetch` et pour le `push`.
 
 Pour limiter l'effet du changement à la `push` url uniquement, ajouter l'option `--push` :
 
-```
-$ git remote set-url --push origin https://domain.tld/repo.git
+```bash
+git remote set-url --push origin https://domain.tld/repo.git
 ```
 
 Notez l'absence d'une option `-fetch` pour changer la `fetch` url. Lorsque l'upstream de `pull` et l'upstream de `push` sont différents, il est recommandé d'avoir des alias différents pour les remotes plutôt qu'un seul alias avec 2 urls différentes.

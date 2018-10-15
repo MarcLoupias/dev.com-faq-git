@@ -30,7 +30,7 @@
 - Comment initialiser un dépôt ?
 - Comment initialiser un dépôt nu (*bare repository*) ?
 - Comment cloner un dépôt ?
-- Comment connaitre l'état du dépôt ? 
+- Comment connaitre l'état du dépôt ?
 
 ## 7.3.2 [Les remotes](faq-content/faq-7.3.2-remotes.md)
 
@@ -47,7 +47,7 @@
 
 - Qu'est-ce que la working directory ?
 - Comment changer l'état de la working directory ?
-- Comment connaitre l'état de la working directory selon git ?
+- Comment connaitre l'état de la working directory selon Git ?
 - Comment annuler les modifications effectuées sur un fichier de la working directory ?
 - Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?
 
@@ -71,7 +71,7 @@
 - Comment ajouter un commit provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt ? (cherry-pick)
 - Comment annuler un commit existant ? (revert)
 
-## 7.3.6 [Les branches](faq-content/faq-7.3.6-les-branches.md) 
+## 7.3.6 [Les branches](faq-content/faq-7.3.6-les-branches.md)
 
 - Qu'est-ce qu'une branche ?
 - Comment lister les branches locales ?

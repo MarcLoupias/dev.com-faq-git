@@ -1,4 +1,4 @@
-# FAQ GIT pour developpez.com
+# FAQ Git pour developpez.com
 
 ## 7.3.3 La working directory
 
@@ -12,53 +12,54 @@ C'est depuis la working directory que l'on effectue les modifications souhaitée
 
 ### Comment changer l'état de la working directory ?
 
-La commande git checkout peut prendre en paramètre un hash de commit, un nom de branche ou un nom de tag. L'exécution de cette commande change la working directory pour exposer l'état du commit, de la branche ou du tag.
+La commande `git checkout` peut prendre en paramètre un hash de commit, un nom de branche ou un nom de tag. L'exécution de cette commande change la working directory pour exposer l'état du commit, de la branche ou du tag.
 
-```
-$ git checkout 3ffb92fe20b6785d801023783d2f18c4de6e1593
-```
-
-A pour effet de changer l'état de la working directory en l'état correspondant au commit désigné. Concrètement, git modifie les fichiers traqués pour les mettre dans l'état correspondant au commit désigné.
-
-Idem avec un nom de branche
-
-```
-$ git checkout master
+```bash
+git checkout 3ffb92fe20b6785d801023783d2f18c4de6e1593
 ```
 
-Ou avec un tag
+A pour effet de changer l'état de la working directory en l'état correspondant au commit désigné. Concrètement, Git modifie les fichiers traqués pour les mettre dans l'état correspondant au commit désigné.
 
-```
-$ git checkout 1.0.0
+Idem avec un nom de branche :
+
+```bash
+git checkout master
 ```
 
-### Comment connaitre l'état de la working directory selon git ?
+Ou avec un tag :
 
+```bash
+git checkout 1.0.0
 ```
+
+### Comment connaitre l'état de la working directory selon Git ?
+
+```bash
 $ git status
 On branch master
 nothing to commit, working directory clean
 ```
 
-Indique qu'on a checkout la branche master et que rien n'est modifié.
+Indique qu'on a `checkout` la branche `master` et que rien n'est modifié.
 
-**En cas de doute**, toujours exécuter un `git status` pour savoir dans quel état se situe git.
+**En cas de doute**, toujours exécuter un `git status` pour savoir dans quel état se situe Git.
 
 ### Comment annuler les modifications effectuées sur un fichier de la working directory ?
 
-Si nous avons modifié le fichier nom-fichier.txt :
+Si nous avons modifié le fichier `nom-fichier.txt` :
 
-```
-$ git checkout -- nom-fichier.txt
+```bash
+git checkout -- nom-fichier.txt
 ```
 
-a pour effet de supprimer toutes les modifications effectuées dans le fichier.
+A pour effet de supprimer toutes les modifications effectuées dans le fichier.
 
 - Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?
 
 Vous obtenez ce genre de message après un `checkout` sur un commit ou sur un tag :
 
-```
+```bash
+$ git checkout 0.4.14
 Note: checking out '0.4.14'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
@@ -80,8 +81,10 @@ En mode détaché ce ne sera plus le cas.
 Pour ajouter des commits au dépôt il est donc nécessaire de se trouver sur une branche, c'est le concept qui représente une ligne de développement.
 
 Une raison courante de vouloir `checkout` un tag est de vouloir créer un hotfix. Dans ce cas on va `checkout` le tag puis immédiatement créer une nouvelle branche :
- 
+
+```bash
+git checkout 0.4.14
+git checkout -b hotfix/0.4.15
 ```
-$ git checkout 0.4.14
-$ git checkout -b hotfix/0.4.15
-```
+
+Le développement du hotfix peut alors démarrer sur la branche `hotfix/0.4.15`.

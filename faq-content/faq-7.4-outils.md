@@ -1,10 +1,10 @@
-# FAQ GIT pour developpez.com
+# FAQ Git pour developpez.com
 
 ## 7.4 Outils
 
 ### GitHub
 
-GitHub est la plus grosse plateforme mondiale d'hébergement web de dépôts git.
+GitHub est la plus grosse plateforme mondiale d'hébergement web de dépôts Git.
 
 L'entreprise [a été rachetée en juin 2018 par Microsoft](https://www.developpez.com/actu/207383/C-est-officiel-Microsoft-debourse-7-5-milliards-pour-s-offrir-GitHub-le-geant-de-Redmond-se-montre-plus-genereux-que-ce-que-disaient-les-rumeurs/).
 
@@ -13,7 +13,7 @@ GitHub s'utilise comme une solution SaaS hébergée dans le cloud. Il est possib
 Par défaut tous les dépôts sont publics, il faut payer pour disposer de dépôts privés.
 
 La solution propose un grand nombre de fonctionnalités, de manière non-exhaustive on trouve :
- 
+
 - les *issues* qui peuvent être utilisées comme un bug tracker ou/et comme un planificateur de tâches.
 - les *milestones* qui permettent de relier les *issues* à une version en devenir.
 - les *releases* qui permettent d'associer des tags à un *CHANGELOG* (bon de livraison).
@@ -24,7 +24,7 @@ Les tarifs de GitHub se trouvent [à cette adresse](https://github.com/pricing).
 
 ### GitLab
 
-GitLab est le concurrent direct de GitHub bien qu'il couvre une surface fonctionnelle plus importante mais moins flexible (intégration moins importante avec les autres fournisseurs de services). 
+GitLab est le concurrent direct de GitHub bien qu'il couvre une surface fonctionnelle plus importante mais moins flexible (intégration moins importante avec les autres fournisseurs de services).
 
 En effet GitLab ne se limite pas à la gestion du code source, il inclut tout le cycle de vie du projet, de la gestion du dépôt jusqu'au déploiement.
 

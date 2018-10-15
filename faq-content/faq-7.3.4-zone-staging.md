@@ -1,10 +1,10 @@
-# FAQ GIT pour developpez.com
+# FAQ Git pour developpez.com
 
 ## 7.3.4 La zone de staging
 
 ### Qu'est ce que la zone de staging ?
 
-Nommée également l'index ou encore la staging area. 
+Nommée également l'index ou encore la *staging area*.
 
 C'est le creuset dans lequel vous préparez le prochain commit à créer sur la branche courante.
 
@@ -12,9 +12,9 @@ Lorsque vous modifiez un fichier de la working directory, la modification doit �
 
 ### Comment ajouter un fichier à la zone de staging ?
 
-Sur la branche master vous créez un fichier `nom-fichier.txt`, un git status vous indique l'état de la working directory :
+Sur la branche `master` vous créez un fichier `nom-fichier.txt`, un `git status` vous indique l'état de la working directory :
 
-```
+```bash
 $ git status
 On branch master
 
@@ -28,15 +28,15 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Il suffit de lire l'output du CLI pour connaitre la commande à exécuter :
+Il suffit de lire la sortie du CLI pour connaitre la commande à exécuter :
 
-```
-$ git add nom-fichier.txt
+```bash
+git add nom-fichier.txt
 ```
 
-Ajoute le fichier `nom-fichier.txt` à la zone de staging. Un `git status` le confirme : 
+Ajoute le fichier `nom-fichier.txt` à la zone de staging. Un `git status` le confirme :
 
-```
+```bash
 $ git status
 On branch master
 
@@ -50,20 +50,20 @@ Changes to be committed:
 
 ### Comment retirer un fichier de la zone de staging ?
 
-Cela dépend s'il s'agit d'un fichier qui vient d'être créé et qui n'est donc pas déjà versionné par git ou s'il s'agit d'une modification d'un fichier existant. Dans l'exemple précédent nous avons créé un fichier la commande est donc :
+Cela dépend s'il s'agit d'un fichier qui vient d'être créé et qui n'est donc pas déjà versionné par Git ou s'il s'agit d'une modification d'un fichier existant. Dans l'exemple précédent nous avons créé un fichier la commande est donc :
 
-```
-$ git rm --cached nom-fichier.text
+```bash
+git rm --cached nom-fichier.text
 ```
 
-Si le fichier existait déjà la commande 
+Si le fichier existait déjà la commande :
 
-```
-git reset HEAD nom-fichier.txt
+```bash
+$ git reset HEAD nom-fichier.txt
 Unstaged changes after reset:
 M       nom-fichier.txt
 ```
 
-Permet de retirer un fichier de la zone de staging. **Les modifications ne sont pas supprimées**. 
+Permet de retirer un fichier de la zone de staging. **Les modifications ne sont pas supprimées**.
 
-git nous l'indique avec le `M` devant le nom du fichier. Il signifie qu'il y a des modifications dans le fichier `nom-fichier.txt` qui ne sont pas présentes dans la zone de staging.
+Git nous l'indique avec le `M` devant le nom du fichier. Il signifie qu'il y a des modifications dans le fichier `nom-fichier.txt` qui ne sont pas présentes dans la zone de staging.

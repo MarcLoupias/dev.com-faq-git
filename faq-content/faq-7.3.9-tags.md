@@ -1,4 +1,4 @@
-# FAQ GIT pour developpez.com
+# FAQ Git pour developpez.com
 
 ## 7.3.9 Les tags
 
@@ -7,7 +7,7 @@
 C'est un label (une chaîne de caractère) pointant sur un et un seul commit.
 
 Son rôle est d'identifier un commit, c'est à dire une révision du code source, correspondant à une version précise du livrable obtenu depuis ce commit.
- 
+
 Le nommage d'un tag obéit généralement à une convention, la spécification [semver](https://semver.org/) est de loin la plus utilisée.
 
 Un tag peut être annoté pour donner des informations complémentaires en langage naturel.
@@ -16,22 +16,22 @@ Un tag peut être annoté pour donner des informations complémentaires en langa
 
 En ligne de commande :
 
-```
-$ git tag -a v1.4.0 -m 'my version 1.4.0'
+```bash
+git tag -a v1.4.0 -m 'my version 1.4.0'
 ```
 
 A pour effet de créer un tag identifiant le commit actuellement `checkout`.
 
 Ce tag est créé localement, pour l'ajouter à un dépôt distant il est nécessaire de le pousser :
 
-```
-$ git push origin v1.4.0
+```bash
+git push origin v1.4.0
 ```
 
 ### Comment supprimer une tag ?
 
-```
-$ git tag -d v1.4.0
+```bash
+git tag -d v1.4.0
 ```
 
 La suppression est seulement locale.
@@ -46,8 +46,8 @@ Comme pour la suppression de tag, renommer un tag rendu public est une **très**
 
 ### Comment lister les tags existants ?
 
-```
-$ git tag
+```bash
+git tag
 ```
 
 ### Comment comparer deux tags ?
