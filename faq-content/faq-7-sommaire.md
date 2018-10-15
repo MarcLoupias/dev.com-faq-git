@@ -1,6 +1,6 @@
 # FAQ Git pour developpez.com
 
-## 7.1 [Généralités](faq-7.1-generalites.md)
+## 7.1 [Généralités](faq-content/faq-7.1-generalites.md)
 
 - Qu'est ce que Git ?
 - Que signifie Git ?
@@ -11,7 +11,7 @@
 - Qu'est-ce qu'un remote ?
 - Que désignent les termes upstream et downstream ?
 
-## 7.2 [Installation et configuration](faq-7.2-install-config.md)
+## 7.2 [Installation et configuration](faq-content/faq-7.2-install-config.md)
 
 - Comment installer Git sur Windows ?
 - Comment connaitre la liste des commandes Git ?
@@ -20,19 +20,19 @@
 - Comment afficher la configuration courante de Git ?
 - Comment exclure des fichiers ?
 - Comment changer son nom d'utilisateur ?
-- Comment changer son email ? 
+- Comment changer son email ?
 - Comment changer l'URL d'un dépôt distant ?
 
 ## 7.3 Utilisation
 
-## 7.3.1 [Initialisation d'un dépôt](faq-7.3.1-initialisation-repository.md)
+## 7.3.1 [Initialisation d'un dépôt](faq-content/faq-7.3.1-initialisation-repository.md)
 
 - Comment initialiser un dépôt ?
 - Comment initialiser un dépôt nu (*bare repository*) ?
 - Comment cloner un dépôt ?
 - Comment connaitre l'état du dépôt ? 
 
-## 7.3.2 [Les remotes](faq-7.3.2-remotes.md)
+## 7.3.2 [Les remotes](faq-content/faq-7.3.2-remotes.md)
 
 - Comment lister les remotes d'un dépôt ?
 - Comment ajouter un remote ?
@@ -43,7 +43,7 @@
 - Comment mettre à jour une branche locale avec une branche distance ?
 - Comment mettre à jour un remote ? (push)
 
-## 7.3.3 [La working directory](faq-7.3.3-working-directory.md)
+## 7.3.3 [La working directory](faq-content/faq-7.3.3-working-directory.md)
 
 - Qu'est-ce que la working directory ?
 - Comment changer l'état de la working directory ?
@@ -51,13 +51,13 @@
 - Comment annuler les modifications effectuées sur un fichier de la working directory ?
 - Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?
 
-## 7.3.4 [La zone de staging](faq-7.3.4-zone-staging.md)
+## 7.3.4 [La zone de staging](faq-content/faq-7.3.4-zone-staging.md)
 
 - Qu'est ce que la zone de staging ?
 - Comment ajouter un fichier à la zone de staging ?
 - Comment retirer un fichier de la zone de staging ?
 
-## 7.3.5 [Les commits](faq-7.3.5-les-commits.md)
+## 7.3.5 [Les commits](faq-content/faq-7.3.5-les-commits.md)
 
 - Qu'est ce qu'un commit ?
 - Comment créer un commit ?
@@ -71,7 +71,7 @@
 - Comment ajouter un commit provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt ? (cherry-pick)
 - Comment annuler un commit existant ? (revert)
 
-## 7.3.6 [Les branches](faq-7.3.6-les-branches.md) 
+## 7.3.6 [Les branches](faq-content/faq-7.3.6-les-branches.md) 
 
 - Qu'est-ce qu'une branche ?
 - Comment lister les branches locales ?
@@ -86,7 +86,7 @@
 - Comment comparer l'état de tous les fichiers présents dans deux branches ?
 - Comment comparer l'état d'un fichier présent dans deux branches ?
 
-## 7.3.7 [Les fusions de branches (`merge`)](faq-7.3.7-merge.md)
+## 7.3.7 [Les fusions de branches (`merge`)](faq-content/faq-7.3.7-merge.md)
 
 - Qu'est-ce qu'un `merge` ?
 - Comment fusionner une branche `toto` dans une branche `master` ?
@@ -96,7 +96,7 @@
 - Comment gérer un conflit ?
 - Comment annuler une fusion en cours ?
 
-## 7.3.8 [Réécriture de l'historique (`rebase`)](faq-7.3.8-rebase.md)
+## 7.3.8 [Réécriture de l'historique (`rebase`)](faq-content/faq-7.3.8-rebase.md)
 
 - Qu'est-ce qu'un `rebase` ?
 - Pourquoi effectuer un `rebase` ?
@@ -107,7 +107,7 @@
 - Comment annuler un `rebase` en cours ?
 - Comment résoudre un conflit lors d'un `rebase` ?
 
-## 7.3.9 [Les tags](faq-7.3.9-tags.md)
+## 7.3.9 [Les tags](faq-content/faq-7.3.9-tags.md)
 
 - Qu'est-ce qu'un tag ?
 - Comment créer une tag ?
@@ -117,7 +117,7 @@
 - Comment comparer deux tags ?
 - Comment comparer l'état d'un fichier présent dans deux tags ?
 
-## 7.3.10 [Les logs](faq-7.3.10-logs.md)
+## 7.3.10 [Les logs](faq-content/faq-7.3.10-logs.md)
 
 - Qu'est-ce que le log ?
 - Comment afficher le log ?
@@ -129,7 +129,7 @@
 - Comment afficher la liste des fichiers modifiés pour chaque commit du log ?
 - Comment trouver qui a modifié quelle ligne dans un fichier donné ? (`blame`)
 
-## 7.4 [Outils](faq-7.4-outils.md)
+## 7.4 [Outils](faq-content/faq-7.4-outils.md)
 
 - GitHub
 - GitLab
