@@ -2,9 +2,11 @@
 
 ## 7.1 Généralités
 
-### Qu'est ce que GIT ?
+### Qu'est ce que Git ?
 
-Git est un système de contrôle de révision décentralisé. Il a été écrit en 2005 à l'initiative de Linus Torvalds pour gérer les sources du kernel Linux.
+Git est un système de contrôle de révision décentralisé.
+
+Il a été écrit en 2005 à l'initiative de Linus Torvalds pour gérer les sources du kernel Linux.
 
 ### Que signifie Git ?
 
