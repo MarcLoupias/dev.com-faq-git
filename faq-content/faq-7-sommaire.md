@@ -14,6 +14,7 @@
 ## 7.2 [Installation et configuration](faq-content/faq-7.2-install-config.md)
 
 - Comment installer Git sur Windows ?
+- Comment installer Git sur macOS ?
 - Comment connaitre la liste des commandes Git ?
 - Comment connaitre la version de votre Git ?
 - Quels sont les fichiers de configuration de Git ?

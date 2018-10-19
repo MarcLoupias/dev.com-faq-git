@@ -10,9 +10,9 @@ Téléchargez le client Git approprié depuis [la page officielle](https://git-s
 
 Il existe plusieurs façons d'installer Git sous macOS.
 
-* La première façon consiste à installer XCode qui inclut Git (Apple Git-xy). Depuis un terminal, saisir la ligne de commande => `$ xcode-select --install`.
-* La deuxième façon consiste à utiliser [git-osx-install](https://sourceforge.net/projects/git-osx-installer/). Téléchargez le fichier .dmg et lancez l'installation en suivant les instructions.
-* La troisième façon consiste à utiliser [Homebrew](https://brew.sh/index_fr). En supposant que [Homebrew](https://brew.sh/index_fr) soit installé, depuis un terminal saisir la ligne de commande => `$ brew install git`.
+* La première façon consiste à installer XCode qui inclut Git (Apple Git-xy). Depuis un terminal, saisir la ligne de commande => `xcode-select --install`.
+* La deuxième façon consiste à utiliser [Git-osx-install](https://sourceforge.net/projects/git-osx-installer/). Téléchargez le fichier .dmg et lancez l'installation en suivant les instructions.
+* La troisième façon consiste à utiliser [Homebrew](https://brew.sh/index_fr). En supposant que [Homebrew](https://brew.sh/index_fr) soit installé, depuis un terminal saisir la ligne de commande => `brew install git`.
 
 ### Comment connaitre la liste des commandes Git ?
 
