@@ -24,12 +24,12 @@ Un miroir du code du projet est hébergé sur [GitHub](https://github.com/git/gi
 
 ### Quelles sont les différences entre un SCM centralisé comme Subversion et un SCM décentralisé comme Git ?
 
-Elles sont trop nombreuses pour être listées dans une FAQ mais d'une manière générale :
+Elles sont trop nombreuses pour être listées dans une FAQ, mais d'une manière générale :
 
-- pas d'autorité centrale obligatoire
-- un utilisateur clonant un projet dispose de la totalité de l'historique sur sa machine
-- tout est fait offline
-- il n'y a pas besoin d'un serveur central pour partager du code entre 2 développeurs
+- pas d'autorité centrale obligatoire ;
+- un utilisateur clonant un projet dispose de la totalité de l'historique sur sa machine ;
+- tout est fait offline ;
+- il n'y a pas besoin d'un serveur central pour partager du code entre deux développeurs.
 
 ### Qu'est-ce qu'un dépôt Git ?
 
@@ -38,9 +38,9 @@ Il s'agit d'un répertoire versionné par Git. Ce répertoire contient à sa rac
 Un dépôt Git est donc autoporté via ce répertoire et peut être déplacé depuis le répertoire racine (pour backup ou autre).
 Aucune information nécessaire à l'usage du dépôt n'est stockée à l'extérieur.
 
-Un dépôt Git correspond généralement à un projet unique mais ce n'est pas forcément le cas.
+Un dépôt Git correspond généralement à un projet unique, mais ce n'est pas forcément le cas.
 Certaines organisations utilisent un dépôt unique pour gérer les codes sources de tous leurs projets.
-Cette stratégie est nommée la "monorepo strategy".
+Cette stratégie est nommée la « monorepo strategy ».
 C'est notamment le cas de Google qui a expliqué en détail sa stratégie lors d'[une conférence en 2015](https://www.youtube.com/watch?v=W71BTkUbdqE).
 
 Un dépôt est donc composé d'un répertoire `.git` et de la working directory.
@@ -51,7 +51,7 @@ La working directory (le répertoire courant en fait) reflète l'état actuel `c
 
 Il s'agit d'un dépôt nu (*bare repository* en anglais) servant d'espace de partage.
 Il peut être local (si vous exposez vos sources depuis votre propre machine) ou distant.
-Il est généralement accompagné d'un client web pour fournir une solution de gestion de projet intégrée (GitHub, GitLab, Gitblit, ...).
+Il est généralement accompagné d'un client web pour fournir une solution de gestion de projet intégrée (GitHub, GitLab, Gitblit...).
 
 ### Que désignent les termes upstream et downstream ?
 
