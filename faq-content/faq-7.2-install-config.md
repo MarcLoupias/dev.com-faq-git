@@ -10,9 +10,9 @@ Téléchargez le client Git approprié depuis [la page officielle](https://git-s
 
 Il existe plusieurs façons d'installer Git sous macOS.
 
-* La première façon consiste à installer XCode qui inclut Git (Apple Git-xy). Depuis un terminal, saisir la ligne de commande => `xcode-select --install`.
-* La deuxième façon consiste à utiliser [Git-osx-install](https://sourceforge.net/projects/git-osx-installer/). Téléchargez le fichier .dmg et lancez l'installation en suivant les instructions.
-* La troisième façon consiste à utiliser [Homebrew](https://brew.sh/index_fr). En supposant que [Homebrew](https://brew.sh/index_fr) soit installé, depuis un terminal saisir la ligne de commande => `brew install git`.
+- La première façon consiste à installer XCode qui inclut Git (Apple Git-xy). Depuis un terminal, saisir la ligne de commande => `xcode-select --install`.
+- La deuxième façon consiste à utiliser [Git-osx-install](https://sourceforge.net/projects/git-osx-installer/). Téléchargez le fichier .dmg et lancez l'installation en suivant les instructions.
+- La troisième façon consiste à utiliser [Homebrew](https://brew.sh/index_fr). En supposant que [Homebrew](https://brew.sh/index_fr) soit installé, depuis un terminal saisir la ligne de commande => `brew install git`.
 
 ### Comment connaitre la liste des commandes Git ?
 
@@ -73,10 +73,10 @@ git version 2.19.1
 
 Les fichiers de configuration de Git sont les suivants (l'ordre ci-dessous correspond à l'ordre de lecture par Git, la dernière valeur lue est la valeur prise en compte) :
 
-1. `C:\ProgramData\Git\config`
-2. system config (e.g. `C:\Program Files\Git\mingw64\etc\gitconfig`)
-3. global config (`%HOMEPATH%\.gitconfig`)
-4. local config (repository-specific `.git/config`)
+1. `C:\ProgramData\Git\config` ;
+2. system config (e.g. `C:\Program Files\Git\mingw64\etc\gitconfig`) ;
+3. global config (`%HOMEPATH%\.gitconfig`) ;
+4. local config (repository-specific `.git/config`).
 
 ### Comment afficher la configuration courante de Git ?
 
@@ -117,13 +117,11 @@ file:.git/config        branch.master.merge=refs/heads/master
 
 ### Comment exclure des fichiers ?
 
-Il existe 3 manières d'exclure des fichiers du champ de Git :
+Il existe trois manières d'exclure des fichiers du champ de Git :
 
-Par projet: créer un fichier `.gitignore` dans le dépôt
-
-Par dépôt: dans le fichier `.git/info/excludes`
-
-Par machine : au travers de la configuration utilisateur dans `~/.gitconfig`
+- par projet: créer un fichier `.gitignore` dans le dépôt ;
+- par dépôt: dans le fichier `.git/info/excludes` ;
+- par machine : au travers de la configuration utilisateur dans `~/.gitconfig`.
 
 ### Comment changer son nom d'utilisateur ?
 
@@ -145,7 +143,7 @@ $ git remote set-url origin https://domaine.tld/repo.git
 $ git remote add origin https://domaine.tld/repo.git
 ```
 
-A pour effet de changer l'url pour le `fetch` et pour le `push`.
+À pour effet de changer l'url pour le `fetch` et pour le `push`.
 
 Pour limiter l'effet du changement à la `push` url uniquement, ajouter l'option `--push` :
 
@@ -153,4 +151,4 @@ Pour limiter l'effet du changement à la `push` url uniquement, ajouter l'option
 git remote set-url --push origin https://domain.tld/repo.git
 ```
 
-Notez l'absence d'une option `-fetch` pour changer la `fetch` url. Lorsque l'upstream de `pull` et l'upstream de `push` sont différents, il est recommandé d'avoir des alias différents pour les remotes plutôt qu'un seul alias avec 2 urls différentes.
+Notez l'absence d'une option `-fetch` pour changer la `fetch` url. Lorsque l'upstream de `pull` et l'upstream de `push` sont différents, il est recommandé d'avoir des alias différents pour les remotes plutôt qu'un seul alias avec deux urls différentes.
