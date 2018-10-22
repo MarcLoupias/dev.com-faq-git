@@ -73,9 +73,9 @@ git version 2.19.1
 
 Les fichiers de configuration de Git sont les suivants (l'ordre ci-dessous correspond à l'ordre de lecture par Git, la dernière valeur lue est la valeur prise en compte) :
 
-1. `C:\ProgramData\Git\config` ;
+1. dans le répertoire d'installation de Git (e.g. `C:\ProgramData\Git\config`) ;
 2. system config (e.g. `C:\Program Files\Git\mingw64\etc\gitconfig`) ;
-3. global config (`%HOMEPATH%\.gitconfig`) ;
+3. global config dans le répertoire utilisateur (`%HOMEPATH%\.gitconfig`) ;
 4. local config (repository-specific `.git/config`).
 
 ### Comment afficher la configuration courante de Git ?
@@ -121,7 +121,7 @@ Il existe trois manières d'exclure des fichiers du champ de Git :
 
 - par projet: créer un fichier `.gitignore` dans le dépôt ;
 - par dépôt: dans le fichier `.git/info/excludes` ;
-- par machine : au travers de la configuration utilisateur dans `~/.gitconfig`.
+- par machine : au travers du fichier `~/.gitignore_global` qui est un fichier référencé par défaut depuis la configuration utilisateur de `~/.gitconfig`.
 
 ### Comment changer son nom d'utilisateur ?
 
@@ -143,7 +143,7 @@ $ git remote set-url origin https://domaine.tld/repo.git
 $ git remote add origin https://domaine.tld/repo.git
 ```
 
-À pour effet de changer l'url pour le `fetch` et pour le `push`.
+A pour effet de changer l'url pour le `fetch` et pour le `push`.
 
 Pour limiter l'effet du changement à la `push` url uniquement, ajouter l'option `--push` :
 
