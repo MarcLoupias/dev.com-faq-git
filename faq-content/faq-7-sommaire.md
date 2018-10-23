@@ -15,6 +15,7 @@
 
 - Comment installer Git sur Windows ?
 - Comment installer Git sur macOS ?
+- Comment installer Git sur Linux ?
 - Comment connaitre la liste des commandes Git ?
 - Comment connaitre la version de votre Git ?
 - Quels sont les fichiers de configuration de Git ?
