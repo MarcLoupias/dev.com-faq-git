@@ -4,7 +4,7 @@
 
 ### Qu'est ce que Git ?
 
-Git est un système de contrôle de révision décentralisé.
+Git est un système de contrôle de révision décentralisé et rapide.
 
 Il a été écrit en 2005 à l'initiative de Linus Torvalds pour gérer les sources du kernel Linux.
 
@@ -47,6 +47,8 @@ Un dépôt est donc composé d'un répertoire `.git` et de la working directory.
 Le répertoire `.git` contient toutes les meta-données du dépôt.
 La working directory (le répertoire courant en fait) reflète l'état actuel `checkout` par Git (un commit, une branche ou un tag).
 
+Il est à noter qu'un dépôt Git peut être utilisé entièrement en local et cela même, s'il n'est pas partagé et que vous êtes le seul utilisateur.
+
 ### Qu'est-ce qu'un remote ?
 
 Il s'agit d'un dépôt nu (*bare repository* en anglais) servant d'espace de partage.
@@ -59,6 +61,6 @@ Ces termes sont souvent employés dans les conversations en anglais à propos de
 
 *upstream* désigne le dépôt distant depuis lequel vous tirez des informations vers votre dépôt local (`clone`, `pull`, `fetch`, ...) ou vers lequel vous poussez des informations (`push`).
 
-*downstream* désigne tous les repositories qui dépendent d'un *upstream* pour leur synchronisation.
+*downstream* désigne tous les dépôts qui dépendent d'un *upstream* pour leur synchronisation.
 
 Si par exemple vous avez un projet hébergé sur un site comme GitHub ou GitLab, le dépôt sur ce site est l'*upstream* et chaque dépôt cloné depuis l'*upstream* est un *downstream*.

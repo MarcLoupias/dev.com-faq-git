@@ -14,6 +14,15 @@ Il existe plusieurs façons d'installer Git sous macOS.
 - La deuxième façon consiste à utiliser [Git-osx-install](https://sourceforge.net/projects/git-osx-installer/). Téléchargez le fichier .dmg et lancez l'installation en suivant les instructions.
 - La troisième façon consiste à utiliser [Homebrew](https://brew.sh/index_fr). En supposant que [Homebrew](https://brew.sh/index_fr) soit installé, depuis un terminal saisir la ligne de commande => `brew install git`.
 
+### Comment installer Git sur Linux ?
+
+Pour la majorité des distributions, Git sera disponible au travers du gestionnaire de paquets.
+Par exemple, pour Debian, vous pouvez l'installer ainsi :
+
+```bash
+apt-get install git
+```
+
 ### Comment connaitre la liste des commandes Git ?
 
 ```bash
