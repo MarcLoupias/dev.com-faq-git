@@ -10,7 +10,7 @@ $ git init
 Initialized empty Git repository in /home/user/dev/projet-toto/.git/
 ```
 
-Initialise un dépôt dans le répertoire courant. Le dépôt est composé du répertoire `.git` contenant les méta-data du dépôt et la working directory.
+Initialise un dépôt dans le répertoire courant. Le dépôt est composé du répertoire `.git` contenant les métadonnées du dépôt et le répertoire de travail (*working directory*).
 
 ### Comment initialiser un dépôt nu (*bare repository*) ?
 
@@ -18,7 +18,7 @@ Initialise un dépôt dans le répertoire courant. Le dépôt est composé du r�
 git init --bare
 ```
 
-Un dépôt nu ne contient pas de working directory. On ne peut donc pas travailler (créer des commits etc ...) avec. Il sert seulement à partager son travail (utilisé comme source pour les autres). Généralement les bare dépôt sont créés par des outils web comme GitHub ou GitLab pour centraliser le travail entre développeurs et faciliter la collaboration via diverses fonctionnalités (gestion des issues, des milestones, etc ...)
+Un dépôt nu ne contient pas de répertoire de travail. On ne peut donc pas travailler avec (créer des commits etc.). Il sert seulement à partager son travail (utilisé comme source pour les autres). Généralement les dépôts sans répertoire de travail (*bare repository*) sont créés par des outils web comme GitHub ou GitLab pour centraliser le travail entre développeurs et faciliter la collaboration via diverses fonctionnalités (gestion des issues, des milestones...)
 
 ### Comment cloner un dépôt ?
 
@@ -30,9 +30,9 @@ Où `<url>` est l'url du dépôt Git à cloner.
 
 ### Comment connaitre l'état du dépôt ?
 
-Indique sur quelle branche on se trouve actuellement et donne l'état de la working directory.
+Indique sur quelle branche on se trouve actuellement et donne l'état du répertoire de travail (*working directory*).
 
-Par exemple avec une working directory propre :
+Par exemple avec un répertoire de travail (*working directory*) propre :
 
 ```bash
 $ git status
@@ -40,7 +40,7 @@ $ git status
 nothing to commit, working directory clean
 ```
 
-Autre exemple avec une working directory contenant des modifications en cours :
+Autre exemple avec un répertoire de travail (*working directory*) contenant des modifications en cours :
 
 ```bash
 $ git status
