@@ -41,17 +41,18 @@
 - Comment inspecter un remote ?
 - Comment supprimer un remote ?
 - Comment renommer un remote ?
-- Comment mettre à jour la représentation locale d'un remote ? (fetch)
-- Comment mettre à jour une branche locale avec une branche distance ?
-- Comment mettre à jour un remote ? (push)
+- Comment mettre à jour la représentation locale d'un remote (fetch) ?
+- Comment mettre à jour une branche locale avec une branche distance (pull) ?
+- Comment mettre à jour un remote (push) ?
 
 ## 7.3.3 [La working directory](faq-content/faq-7.3.3-working-directory.md)
 
-- Qu'est-ce que la working directory ?
-- Comment changer l'état de la working directory ?
-- Comment connaitre l'état de la working directory selon Git ?
-- Comment annuler les modifications effectuées sur un fichier de la working directory ?
+- Qu'est-ce que le répertoire de travail (working directory) ?
+- Comment changer l'état du répertoire de travail ?
+- Comment connaitre l'état du répertoire de travail selon Git ?
+- Comment annuler les modifications effectuées sur un fichier du répertoire de travail ?
 - Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?
+- Quel est l'intérêt de faire un checkout sur un tag ?
 
 ## 7.3.4 [La zone de staging](faq-content/faq-7.3.4-zone-staging.md)
 
