@@ -16,6 +16,7 @@ Parmi ces fichiers ont peut trouver :
 - `ISSUE_TEMPLATE.md`, un template pour la création d'issue. Il est de bon ton de le respecter !
 - `PULL_REQUEST_TEMPLATE.md`, un template pour la création des Pull Request. De même il est de bon ton de le respecter !
 - `CODE_OF_CONDUCT.md`, un code de conduite à tenir dans vos échanges avec les autres contributeurs. Il est parfois nécessaire de l'accepter en même temps que la première Pull Request.
+- `CODING_STYLE.md`, décrit ou donne des liens décrivant le style de code à utiliser. Ce fichier est parfois associé à un linter qui sera exécuté dans l'intégration continue avec les tests.
 
 ### Comment proposer un sujet de contribution ?
 
@@ -23,6 +24,11 @@ Ouvrez une issue ! C'est le canal de discussion principal et c'est en quelque so
 
 Il vaut mieux proposer une contribution par ce biais avant de se lancer dans le code.
 Inutile de perdre du temps à écrire du code si les mainteneurs du projet ne sont pas d'accord avec votre proposition.
+
+Toutefois, s'il s'agit d'une modification mineure n'hésitez pas à proposer directement une Pull Request.
+
+Certains projets utilisent beaucoup les outils communautaires type Discord, Slack, IRC. Il existe aussi [Gitter](https://gitter.im/) qui bénéficie d'une excellente intégration avec GitHub.
+C'est un excellent moyen de prendre la température d'autant que les historiques de discussion sont souvent publics.
 
 ### Pourquoi est-il nécessaire de forker le projet sur lequel on souhaite contribuer ?
 
@@ -64,6 +70,9 @@ Il convient donc de récupérer leur travail : `git checkout master` puis `git p
 
 Ceci fait retournez sur votre branche de travail (`git checkout <nom-de-votre-branche>`) et rebasez là avec master : `git rebase master`.
 
+On peut également rebaser directement sa branche de travail sans tirer master via `git rebase origin/master`.
+Attention il sera nécessaire de mettre à jour votre représentation locale du dépôt distant au préalable via `git fetch origin`.
+
 Si vous avez des conflits fixez les, puis vous pouvez pousser votre branche sur votre fork : `git push fork <nom-de-votre-branche>`.
 
 A ce stade, l'outil que vous utilisez pour collaborer vous proposera de créer une Pull Request (si GitHub) ou une Merge Request (si GitLab).
@@ -74,7 +83,12 @@ Il convient de vérifier son résultat.
 
 Si tout va bien, les mainteneurs vont effectuer une revue de code de votre contribution. Restez attentif ils pourront vous proposer ou exiger des améliorations.
 
+Notez qu'il est rare qu'une contribution (surtout les premières) soit acceptée au premier essai, il ne faut pas s'en offusquer le propre des Pull Request est d'échanger sur la collaboration apportée.
+
 Si tout va bien vos commits seront ajoutés à la branche de collaboration.
+
+Notez également que les mainteneurs demandent parfois de `squash` vos commits en un seul, un rebase intéractif suivi d'un `git push --force fork <nom-de-votre-branche>` sera nécessaire.
+Sinon depuis peu les mainteneurs peuvent `squash` les commits eux-mêmes via l'interface web (sur GitHub comme sur GitLab).
 
 ### Apprendre à contribuer à un projet OpenSource est-il utile pour ma carrière professionnelle ?
 
@@ -90,3 +104,9 @@ Ces pratiques d'un autre âge nuisent considérablement à la productivité et �
 On peut donc véritablement parler de compétence en la matière, et cette compétence est de plus en plus souvent appréciée sinon demandée.
 
 Pouvoir montrer une contribution effectuée à un projet OpenSource c'est prouver que vous êtes capable de collaborer de cette manière. Cela peut vous être demandé lors de vos entretiens.
+
+Cela met également en avant :
+
+- votre autonomie et votre esprit d'initiative notamment dans l'optique d'un télétravail.
+- une capacité à s'adapter à un contexte de travail spécifique (les règles spécifiques du projet).
+- une capacité à travailler à l'international (principalement en anglais).
