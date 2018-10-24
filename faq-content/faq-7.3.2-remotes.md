@@ -10,9 +10,9 @@ origin https://www.domain.tld/git/repo.git (fetch)
 origin https://www.domain.tld/git/repo.git (push)
 ```
 
-Un remote est désigné par 2 urls, une url de `fetch` (indique où tirer les modifications effectuées par les autres développeurs) et une url de `push` (indique où pousser ses propres modifications).
+Un remote est désigné par deux URL, une URL de `fetch` (indique où tirer les modifications effectuées par les autres développeurs) et une URL de `push` (indique où pousser ses propres modifications).
 
-Certaines organisations adoptent le forking model pour gérer la collaboration dans le projet. Un nouveau développeur clonera le projet depuis le dépôt central, forkera ensuite ce dépôt puis changera sa push url pour pousser sur son fork au lieu du repo central. Les modifications du fork vers le repo central seront effectuées au travers pull/merge request depuis l'outil web présent sur le repo central (GitHub, GitLab, ...). Ce modèle a pour avantage de simplifier et de sécuriser fortement la gestion des droits en écriture sur le dépôt central.
+Certaines organisations adoptent le `forking model` pour gérer la collaboration dans le projet. Un nouveau développeur clonera le projet depuis le dépôt central, forkera ensuite ce dépôt puis changera l'URL pour pousser sur son fork au lieu du dépôt central. Les modifications du fork vers le dépot central seront effectuées au travers pull/merge request depuis l'outil web présent sur le dépot central (GitHub, GitLab...). Ce modèle a pour avantage de simplifier et de sécuriser fortement la gestion des droits en écriture sur le dépôt central.
 
 ### Comment ajouter un remote ?
 
@@ -36,10 +36,9 @@ $ git remote show origin
     master fusionne avec la distante master
   Référence locale configurée pour 'git push' :
     master pousse vers master (à jour)
-
 ```
 
-Affiche l'état du dépôt distant (fetch et push urls, liste des branches, si elles sont trackées ou non, branches locales configurées pour un pull et pour un push.
+Affiche l'état du dépôt distant (fetch et push urls), liste des branches, si elles sont trackées ou non, branches locales configurées pour un pull et pour un push.
 
 ### Comment supprimer un remote ?
 
@@ -65,7 +64,7 @@ git remote rename origin dist
 
 A pour effet de modifier le nom du dépôt distant de `origin` en `dist`.
 
-### Comment mettre à jour la représentation locale d'un remote ? (fetch)
+### Comment mettre à jour la représentation locale d'un remote (fetch) ?
 
 ```bash
 git fetch <remote>
@@ -73,7 +72,7 @@ git fetch <remote>
 
 Où `<remote>` correspond au nom du remote (`origin` par défaut lors d'un clone).
 
-### Comment mettre à jour une branche locale avec une branche distance ?
+### Comment mettre à jour une branche locale avec une branche distance (pull) ?
 
 ```bash
 git checkout <branche>
@@ -82,7 +81,7 @@ git pull <remote> <branche>
 
 Où `<remote>` correspond au nom du remote (`origin` par défaut lors d'un clone) et `<branche>` au nom de la branche.
 
-La commande `pull` exécute en réalité un `fetch` suivi d'un `merge`, au détail cela donnerait  :
+La commande `pull` exécute en réalité un `fetch` suivi d'un `merge`, au détail cela donnerait :
 
 ```bash
 git checkout master
