@@ -41,9 +41,9 @@
 - Comment inspecter un remote ?
 - Comment supprimer un remote ?
 - Comment renommer un remote ?
-- Comment mettre à jour la représentation locale d'un remote (fetch) ?
-- Comment mettre à jour une branche locale avec une branche distance (pull) ?
-- Comment mettre à jour un remote (push) ?
+- Comment mettre à jour la représentation locale d'un remote (`fetch`) ?
+- Comment mettre à jour une branche locale avec une branche distante (`pull`) ?
+- Comment mettre à jour un remote (`push`) ?
 
 ## 7.3.3 [La working directory](faq-content/faq-7.3.3-working-directory.md)
 

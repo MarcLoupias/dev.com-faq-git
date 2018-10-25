@@ -38,7 +38,7 @@ $ git remote show origin
     master pousse vers master (à jour)
 ```
 
-Affiche l'état du dépôt distant (fetch et push urls), liste des branches, si elles sont trackées ou non, branches locales configurées pour un pull et pour un push.
+Affiche l'état du dépôt distant (fetch et push), liste des branches, si elles sont trackées ou non, branches locales configurées pour un pull et pour un push.
 
 ### Comment supprimer un remote ?
 
@@ -64,7 +64,7 @@ git remote rename origin dist
 
 A pour effet de modifier le nom du dépôt distant de `origin` en `dist`.
 
-### Comment mettre à jour la représentation locale d'un remote (fetch) ?
+### Comment mettre à jour la représentation locale d'un remote (`fetch`) ?
 
 ```bash
 git fetch <remote>
@@ -72,7 +72,7 @@ git fetch <remote>
 
 Où `<remote>` correspond au nom du remote (`origin` par défaut lors d'un clone).
 
-### Comment mettre à jour une branche locale avec une branche distance (pull) ?
+### Comment mettre à jour une branche locale avec une branche distante (`pull`) ?
 
 ```bash
 git checkout <branche>
@@ -91,7 +91,7 @@ git merge origin/master
 
 L'exécution d'une commande `pull` peut donc nécessiter de résoudre des conflits puisqu'il s'agit d'un `merge`.
 
-### Comment mettre à jour un remote ? (push)
+### Comment mettre à jour un remote (`push`) ?
 
 ```bash
 git push origin toto
