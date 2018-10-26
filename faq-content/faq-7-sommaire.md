@@ -8,7 +8,7 @@
 - Où trouver le code source de Git ?
 - Quelles sont les différences entre un SCM centralisé comme Subversion et un SCM décentralisé comme Git ?
 - Qu'est-ce qu'un dépôt Git ?
-- Qu'est-ce qu'un remote ?
+- Qu'est-ce qu'un dépôt distant (*remote*) ?
 - Que désignent les termes upstream et downstream ?
 
 ## 7.2 [Installation et configuration](faq-content/faq-7.2-install-config.md)
@@ -34,16 +34,16 @@
 - Comment cloner un dépôt ?
 - Comment connaitre l'état du dépôt ?
 
-## 7.3.2 [Les remotes](faq-content/faq-7.3.2-remotes.md)
+## 7.3.2 [Les dépôts distants (*remotes*)](faq-content/faq-7.3.2-remotes.md)
 
-- Comment lister les remotes d'un dépôt ?
-- Comment ajouter un remote ?
-- Comment inspecter un remote ?
-- Comment supprimer un remote ?
-- Comment renommer un remote ?
-- Comment mettre à jour la représentation locale d'un remote (`fetch`) ?
+- Comment lister les dépôts distants d'un dépôt ?
+- Comment ajouter un dépôt distant ?
+- Comment inspecter un dépôt distant ?
+- Comment supprimer un dépôt distant ?
+- Comment renommer un dépôt distant ?
+- Comment mettre à jour la représentation locale d'un dépôt distant (`fetch`) ?
 - Comment mettre à jour une branche locale avec une branche distante (`pull`) ?
-- Comment mettre à jour un remote (`push`) ?
+- Comment mettre à jour un dépôt distant (`push`) ?
 
 ## 7.3.3 [La working directory](faq-content/faq-7.3.3-working-directory.md)
 
