@@ -54,11 +54,11 @@
 - Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?
 - Quel est l'intérêt de faire un checkout sur un tag ?
 
-## 7.3.4 [La zone de staging](faq-content/faq-7.3.4-zone-staging.md)
+## 7.3.4 [L'index (*staging area*)](faq-content/faq-7.3.4-zone-staging.md)
 
-- Qu'est ce que la zone de staging ?
-- Comment ajouter un fichier à la zone de staging ?
-- Comment retirer un fichier de la zone de staging ?
+- Qu'est ce que l'index ?
+- Comment ajouter un fichier à l'index ?
+- Comment retirer un fichier de l'index ?
 
 ## 7.3.5 [Les commits](faq-content/faq-7.3.5-les-commits.md)
 
