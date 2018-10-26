@@ -49,7 +49,7 @@ La working directory (le répertoire courant en fait) reflète l'état actuel `c
 
 Il est à noter qu'un dépôt Git peut être utilisé entièrement en local et cela même, s'il n'est pas partagé et que vous êtes le seul utilisateur.
 
-### Qu'est-ce qu'un remote ?
+### Qu'est-ce qu'dépôt distant (*remote*) ?
 
 Il s'agit d'un dépôt nu (*bare repository* en anglais) servant d'espace de partage.
 Il peut être local (si vous exposez vos sources depuis votre propre machine) ou distant.

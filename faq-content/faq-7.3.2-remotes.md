@@ -1,8 +1,8 @@
 # FAQ Git pour developpez.com
 
-## 7.3.2 Les remotes
+## 7.3.2 Les dépôts distants (*remotes*)
 
-### Comment lister les remotes d'un dépôt ?
+### Comment lister les dépôts distants d'un dépôt ?
 
 ```bash
 $ git remote -v
@@ -10,19 +10,19 @@ origin https://www.domain.tld/git/repo.git (fetch)
 origin https://www.domain.tld/git/repo.git (push)
 ```
 
-Un remote est désigné par deux URL, une URL de `fetch` (indique où tirer les modifications effectuées par les autres développeurs) et une URL de `push` (indique où pousser ses propres modifications).
+Un dépôt distant (*remote*) est désigné par deux URL, une URL de `fetch` (indique où tirer les modifications effectuées par les autres développeurs) et une URL de `push` (indique où pousser ses propres modifications).
 
 Certaines organisations adoptent le `forking model` pour gérer la collaboration dans le projet. Un nouveau développeur clonera le projet depuis le dépôt central, forkera ensuite ce dépôt puis changera l'URL pour pousser sur son fork au lieu du dépôt central. Les modifications du fork vers le dépot central seront effectuées au travers pull/merge request depuis l'outil web présent sur le dépot central (GitHub, GitLab...). Ce modèle a pour avantage de simplifier et de sécuriser fortement la gestion des droits en écriture sur le dépôt central.
 
-### Comment ajouter un remote ?
+### Comment ajouter un dépôt distant ?
 
 ```bash
 git remote add <alias> <chemin/url>
 ```
 
-Où `<alias>` désigne le nom du `remote`.
+Où `<alias>` désigne le nom du dépôt distant (*remote*).
 
-### Comment inspecter un remote ?
+### Comment inspecter un dépôt distant ?
 
 ```bash
 $ git remote show origin
@@ -40,7 +40,7 @@ $ git remote show origin
 
 Affiche l'état du dépôt distant (fetch et push), liste des branches, si elles sont trackées ou non, branches locales configurées pour un pull et pour un push.
 
-### Comment supprimer un remote ?
+### Comment supprimer un dépôt distant ?
 
 ```bash
 git remote rm <remote>
@@ -48,7 +48,7 @@ git remote rm <remote>
 
 Où `remote` désigne le nom du dépôt distant.
 
-### Comment renommer un remote ?
+### Comment renommer un dépôt distant ?
 
 ```bash
 git remote rename <old> <new>
@@ -64,13 +64,13 @@ git remote rename origin dist
 
 A pour effet de modifier le nom du dépôt distant de `origin` en `dist`.
 
-### Comment mettre à jour la représentation locale d'un remote (`fetch`) ?
+### Comment mettre à jour la représentation locale d'un dépôt distant (`fetch`) ?
 
 ```bash
 git fetch <remote>
 ```
 
-Où `<remote>` correspond au nom du remote (`origin` par défaut lors d'un clone).
+Où `<remote>` correspond au nom du dépôt distant (`origin` par défaut lors d'un clone).
 
 ### Comment mettre à jour une branche locale avec une branche distante (`pull`) ?
 
@@ -79,7 +79,7 @@ git checkout <branche>
 git pull <remote> <branche>
 ```
 
-Où `<remote>` correspond au nom du remote (`origin` par défaut lors d'un clone) et `<branche>` au nom de la branche.
+Où `<remote>` correspond au nom du dépôt distant (`origin` par défaut lors d'un clone) et `<branche>` au nom de la branche.
 
 La commande `pull` exécute en réalité un `fetch` suivi d'un `merge`, au détail cela donnerait :
 
@@ -91,12 +91,12 @@ git merge origin/master
 
 L'exécution d'une commande `pull` peut donc nécessiter de résoudre des conflits puisqu'il s'agit d'un `merge`.
 
-### Comment mettre à jour un remote (`push`) ?
+### Comment mettre à jour un dépôt distant (`push`) ?
 
 ```bash
 git push origin toto
 ```
 
-A pour effet de mettre à jour la branche `toto` sur le remote nommé `origin`.
+A pour effet de mettre à jour la branche `toto` sur le dépôt distant nommé `origin`.
 
 Si la branche n'existe pas sur le dépôt distant elle est créée.
