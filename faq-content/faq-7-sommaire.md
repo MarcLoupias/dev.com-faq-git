@@ -62,17 +62,17 @@
 
 ## 7.3.5 [Les commits](faq-content/faq-7.3.5-les-commits.md)
 
-- Qu'est ce qu'un commit ?
-- Comment créer un commit ?
-- Comment ajouter un message en créant un commit ?
-- Comment modifier le message d'un commit existant ?
-- Comment supprimer le dernier commit de la branche courante sans perdre les modifications ?
-- Comment supprimer le dernier commit de la branche courante avec les modifications ?
-- Comment supprimer les "n" derniers commits de la branche courante sans perdre les modifications ?
-- Comment supprimer les "n" derniers commits de la branche courante avec les modifications ?
-- Comment ajouter un commit d'une branche A dans une branche B sans effectuer un merge ? (cherry-pick)
-- Comment ajouter un commit provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt ? (cherry-pick)
-- Comment annuler un commit existant ? (revert)
+- Qu'est ce qu'un *commit* ?
+- Comment créer un *commit* ?
+- Comment ajouter un message en créant un *commit* ?
+- Comment modifier le message d'un *commit* existant ?
+- Comment supprimer le dernier *commit* de la branche courante sans perdre les modifications ?
+- Comment supprimer le dernier *commit* de la branche courante avec les modifications ?
+- Comment supprimer les "n" derniers *commits* de la branche courante sans perdre les modifications ?
+- Comment supprimer les "n" derniers *commits* de la branche courante avec les modifications ?
+- Comment ajouter un *commit* d'une branche A dans une branche B sans effectuer un merge (*cherry-pick*) ? 
+- Comment ajouter un *commit* provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt (*cherry-pick*) ?
+- Comment annuler un *commit* existant (*revert*) ?
 
 ## 7.3.6 [Les branches](faq-content/faq-7.3.6-les-branches.md)
 
