@@ -93,7 +93,7 @@ git reset --hard HEAD~3
 
 Les trois derniers *commits* sont supprimés et les modifications qu'ils comportaient le sont avec.
 
-### Comment ajouter un *commit* d'une branche A dans une branche B sans effectuer un merge (*cherry-pick*) ? 
+### Comment ajouter un *commit* d'une branche A dans une branche B sans effectuer un merge (*cherry-pick*) ?
 
 Vous devez avoir `checkout` la branche de destination, puis vous exécutez un `cherry-pick` en lui passant en paramètre le hash du *commit* désiré.
 
@@ -117,7 +117,7 @@ git checkout master
 git cherry-pick 1234abcd
 ```
 
-### Comment annuler un *commit* existant (*revert*) ? 
+### Comment annuler un *commit* existant (*revert*) ?
 
 C'est la bonne manière d'annuler un *commit* existant dans un historique qui a été publié.
 En effet une pratique essentielle est de ne jamais réécrire ou supprimer un historique qui a été publié et qui a donc pu être récupéré par un autre utilisateur.
