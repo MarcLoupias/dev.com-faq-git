@@ -85,7 +85,9 @@
 - Comment supprimer une branche distante ?
 - Comment renommer une branche ?
 - Comment comparer deux branches ?
-- Comment comparer les historiques de 2 branches ?
+- Comment comparer deux branches pour connaître les historiques des *commits* ?
+- Comment comparer deux branches pour connaître les contenus des *commits* ?
+- Comment comparer les historiques de deux branches ?
 - Comment comparer l'état de tous les fichiers présents dans deux branches ?
 - Comment comparer l'état d'un fichier présent dans deux branches ?
 

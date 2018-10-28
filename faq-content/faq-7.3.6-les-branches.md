@@ -4,15 +4,15 @@
 
 ### Qu'est-ce qu'une branche ?
 
-Conceptuellement, une branche est une ligne de développement dont le but est d'ajouter de nouveaux commits à l'arbre des commits constituants le dépôt.
+Conceptuellement, une branche est une ligne de développement dont le but est d'ajouter de nouveaux *commits* à l'arbre des *commits* constituants le dépôt.
 
 C'est depuis une branche que l'utilisateur :
 
-- modifie la working directory (modification des sources)
-- ajoute à l'index ces modifications
-- et qu'il crée des commits
+- modifie le répertoire de travail *working directory* (modification des sources) ;
+- ajoute à l'index ces modifications ;
+- et qu'il crée des *commits*.
 
-Techniquement, une branche est une référence sur le dernier commit d'une série de commits. Tous les commits descendants font donc parti de la branche.
+Techniquement, une branche est une référence sur le dernier *commit* d'une série de *commits*. Tous les *commits* descendants font donc parti de la branche.
 
 Ainsi, manipuler une branche est une opération très rapide à exécuter puisqu'il s'agit d'un pointeur et non d'un container.
 
@@ -88,50 +88,54 @@ Ne fonctionnera pas si `<nouveau-nom>` est déjà utilisé pour un nom de branch
 
 Il y a deux axes de comparaison possibles, on peut vouloir comparer :
 
-- les séries de commits des branches (les historiques des commits)
-- l'état des fichiers (les contenus des commits)
+- [les séries de *commits* des branches (les historiques des *commits*)](faq-content/faq-7.3.6-les-branches.md) ;
+- [l'état des fichiers (les contenus des *commits*)](faq-content/faq-7.3.6-les-branches.md).
 
-La première question est donc d'abord de savoir ce que l'on cherche à comparer.
+### Comment comparer deux branches pour connaître les historiques des *commits* ?
 
-Pour comparer les historiques de 2 branches, on se réfèrera à la commande `git log`, pour comparer l'état des fichiers on se réfèrera à la commande `git diff`.
+Cette question est donc de savoir ce que l'on cherche à comparer.
 
-La deuxième question est de savoir comment comparer les branches.
+Pour comparer les historiques de deux branches, on se réfèrera à la commande `git log`, pour comparer l'état des fichiers on se réfèrera à la commande `git diff`.
 
-Ceci est déterminé par les "range operator" "double dot" (`..`) et "triple dot" (`...`).
+### Comment comparer deux branches pour connaître les contenus des *commits* ?
+
+Cette question est donc de savoir comment comparer les branches.
+
+Ceci est déterminé par les *range operator* « double dot » (`..`) et « triple dot » (`...`).
 
 L'usage se fait de cette manière : `git log A..B` ou `git diff A..B`.
 
 Attention, selon la commande utilisée (`log` ou `diff`), la sémantique des opérateurs est différente.
 
-Dans le cas de `git log` :
+Dans le cas de `git log`.
 
 - `..` permet de connaitre les éléments présents dans l'un mais pas dans l'autre.
 - `...` permet de connaitre tous les éléments qui ne sont pas partagés.
 
-Dans le cas de `git diff` :
+Dans le cas de `git diff`.
 
-- `..` permet de connaitre les différences de contenu entre les têtes (dernier commit, nommé souvent "tip" en anglais) des deux branches.
-- `...` permet de connaitre les différences entre la tête de B et la "merge base" (le dernier commit commun dans l'arbre) commune avec A.
+- `..` permet de connaitre les différences de contenu entre les têtes (dernier *commit*, nommé souvent *tip* en anglais) des deux branches.
+- `...` permet de connaitre les différences entre la tête de B et la *merge base* (le dernier *commit* commun dans l'arbre) commune avec A.
 
-### Comment comparer les historiques de 2 branches ?
+### Comment comparer les historiques de deux branches ?
 
-Si je souhaite connaitre la liste des commits existants dans `release/v1.0.0` et qui n'existent pas dans `master` :
+Si je souhaite connaitre la liste des *commits* existants dans `release/v1.0.0` et qui n'existent pas dans `master` :
 
 ```bash
 git log release/v1.0.0..master
 ```
 
-Pour connaitre la liste des commits existants dans `master` et qui n'existent pas dans `release/v1.0.0`, on inverse simplement l'ordre :
+Pour connaitre la liste des *commits* existants dans `master` et qui n'existent pas dans `release/v1.0.0`, on inverse simplement l'ordre :
 
 ```bash
 git log master..release/v1.0.0
 ```
 
-Certaines options de la commande `log` sont très pratiques pour affiner l'affichage brut de `git log`, elles peuvent être combinées :
+Certaines options de la commande `log` sont très pratiques pour affiner l'affichage brut de `git log`, elles peuvent être combinées.
 
-`--oneline` permet de limiter l'affichage de chaque commit sur une seule ligne.
+- `--oneline` permet de limiter l'affichage de chaque *commit* sur une seule ligne.
 
-`--stat` affiche la liste des fichiers modifiés et le nombre d'ajouts et suppressions, par ex :
+- `--stat` affiche la liste des fichiers modifiés et le nombre d'ajouts et suppressions, par ex :
 
 ```bash
 $ git log --oneline --stat release/v1.0.0..master
@@ -147,13 +151,13 @@ e9a998f update superagent from 2.+ to 3.+
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
-Dans le cas de l'usage de l'opérateur triple dot (`...`), l'ajout des options `--left-right`, `--decorate` et `--graph` permettent de rendre plus lisible le résultat.
+Dans le cas de l'usage de l'opérateur *triple dot* (`...`), l'ajout des options `--left-right`, `--decorate` et `--graph` permettent de rendre plus lisible le résultat.
 
-`--left-right` ajoute à chaque ligne un `<` ou un `>` selon si la ligne fait référence à la première ou à la deuxième branche.
+- `--left-right` ajoute à chaque ligne un `<` ou un `>` selon si la ligne fait référence à la première ou à la deuxième branche.
 
-`--decorate` affiche clairement les "refs" (tags, branches, `HEAD`) entre parenthèses après le SHA1 des commits.
+- `--decorate` affiche clairement les « refs » (tags, branches, `HEAD`) entre parenthèses après le SHA1 des *commits*.
 
-`--graph` constitue un graphe en ASCII art.
+- `--graph` constitue un graphe en ASCII art.
 
 Par exemple :
 
