@@ -6,8 +6,13 @@
 
 Le fichier `README.md` du dépôt doit être lu en intégralité et très attentivement. Par convention c'est le point d'entrée documentaire de tout projet.
 
-La plupart des projets ont d'autres fichiers, souvent au format markdown, qu'il est utile de lire.
-D'une manière générale il faut lire tout fichier texte présent à la racine du dépôt.
+Il est affiché par défaut par les outils web type GitHub / GitLab lorsqu'on accède au dépôt du projet.
+
+Les premières instructions pour utiliser le projet (installation des dépendances, compilation, exécution, ...) sont souvent rédigées dans ce fichier.
+
+Ces informations sont généralement reprises sur le wiki du projet et sur le site de présentation si il en dispose.
+
+Certains projets ont d'autres fichiers servant à rentrer plus dans le détail, souvent au format markdown, qu'il est utile de lire.
 
 Parmi ces fichiers ont peut trouver :
 
@@ -79,7 +84,7 @@ A ce stade, l'outil que vous utilisez pour collaborer vous proposera de créer u
 
 Une fois créée, c'est aux mainteneurs de travailler.
 Selon comment ils fonctionnent et ont configuré leur projet, le fait d'avoir proposé une contribution a pu déclencher un job dans l'intégration continue.
-Il convient de vérifier son résultat.
+Il convient de vérifier son résultat car si il est en erreur c'est à vous qu'il revient d'effectuer la correction, la Pull Request restera bloquée tant que la correction n'aura pas été effectuée.
 
 Si tout va bien, les mainteneurs vont effectuer une revue de code de votre contribution. Restez attentif ils pourront vous proposer ou exiger des améliorations.
 
@@ -90,22 +95,11 @@ Si tout va bien vos commits seront ajoutés à la branche de collaboration.
 Notez également que les mainteneurs demandent parfois de `squash` vos commits en un seul, un rebase intéractif suivi d'un `git push --force fork <nom-de-votre-branche>` sera nécessaire.
 Sinon depuis peu les mainteneurs peuvent `squash` les commits eux-mêmes via l'interface web (sur GitHub comme sur GitLab).
 
-### Apprendre à contribuer à un projet OpenSource est-il utile pour ma carrière professionnelle ?
+### Qu'est-ce que cela m'apporte de contribuer à un projet OpenSource ?
 
-Oui ! Indépendamment de la contribution technique pure, cela améliorera sensiblement vos compétences sur Git, et ensuite de plus en plus d'entreprises fonctionnent en interne de la même manière pour collaborer.
+Indépendamment de la fonctionnalité que vous ajoutez et de la contribution technique pure, cela améliorera sensiblement vos compétences sur Git.
 
-Le mouvement DevOps incite fortement les entreprises à décloisonner leur organisation interne (casser les silos) en ouvrant les codes sources entre les services.
-
-En effet dans les grands comptes les services sont souvent historiquement très cloisonnés, au point de se facturer en interne leurs prestations.
-Il en va de même pour le code source. Souvent il n'est pas ouvert entre les services d'une même entreprise comme s'il s'agissait d'entreprises différentes.
-
-Ces pratiques d'un autre âge nuisent considérablement à la productivité et à l'agilité du système d'information.
-
-On peut donc véritablement parler de compétence en la matière, et cette compétence est de plus en plus souvent appréciée sinon demandée.
-
-Pouvoir montrer une contribution effectuée à un projet OpenSource c'est prouver que vous êtes capable de collaborer de cette manière. Cela peut vous être demandé lors de vos entretiens.
-
-Cela met également en avant :
+Pouvoir montrer une contribution effectuée à un projet OpenSource c'est aussi mettre en avant :
 
 - votre autonomie et votre esprit d'initiative notamment dans l'optique d'un télétravail.
 - une capacité à s'adapter à un contexte de travail spécifique (les règles spécifiques du projet).
