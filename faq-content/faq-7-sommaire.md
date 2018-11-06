@@ -91,11 +91,11 @@
 - Comment comparer l'état de tous les fichiers présents dans deux branches ?
 - Comment comparer l'état d'un fichier présent dans deux branches ?
 
-## 7.3.7 [Les fusions de branches (`merge`)](faq-content/faq-7.3.7-merge.md)
+## 7.3.7 [Les fusions de branches (*merge*)](faq-content/faq-7.3.7-merge.md)
 
-- Qu'est-ce qu'un `merge` ?
+- Qu'est-ce qu'une fusion (*merge*) ?
 - Comment fusionner une branche `toto` dans une branche `master` ?
-- Quelle est la différence entre `merge` *fast-forward* et un `merge` *no-fast-forward* ?
+- Quelle est la différence entre *merge fast-forward* et un *merge no-fast-forward* ?
 - Comment annuler une fusion terminée ?
 - Qu'est-ce qu'un conflit ?
 - Comment gérer un conflit ?
