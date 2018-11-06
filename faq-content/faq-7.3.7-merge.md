@@ -1,26 +1,26 @@
 # FAQ Git pour developpez.com
 
-## 7.3.7 Les fusions de branches (`merge`)
+## 7.3.7 Les fusions de branches (*merge*)
 
-### Qu'est-ce qu'un `merge` ?
+### Qu'est-ce qu'une fusion (*merge*) ?
 
 C'est l'action de fusionner une branche avec une autre, généralement d'une branche enfant vers une branche parente.
 
 Par exemple :
 
-Ici nous avons une seule branche `master` avec un seul commit `M1`.
+Ici nous avons une seule branche `master` avec un seul *commit* `M1`.
 
 ```text
 ---M1 master
 ```
 
-Nous créons une branche `toto`, à la création ces deux branches pointent sur le commit `M1` :
+Nous créons une branche `toto`, à la création ces deux branches pointent sur le *commit* `M1` :
 
 ```text
 ---M1 master, toto
 ```
 
-Nous ajoutons un commit à la branche `toto` :
+Nous ajoutons un *commit* à la branche `toto` :
 
 ```text
 ---M1 master
@@ -28,9 +28,9 @@ Nous ajoutons un commit à la branche `toto` :
    B1 toto
 ```
 
-La branche `master` est toujours constituée seulement du commit `M1`, la branche `toto` elle est constituée du commit `M1` suivi du commit `B1` qui a pour parent le commit `M1`.
+La branche `master` est toujours constituée seulement du *commit* `M1`, la branche `toto` elle est constituée du *commit* `M1` suivi du *commit* `B1` qui a pour parent le *commit* `M1`.
 
-Nous ajoutons de nouveaux commits sur la branche `toto` :
+Nous ajoutons de nouveaux *commits* sur la branche `toto` :
 
 ```text
 ---M1 master
@@ -38,9 +38,9 @@ Nous ajoutons de nouveaux commits sur la branche `toto` :
    B1---B2---B3 toto
 ```
 
-La branche `master` est toujours constituée seulement du commit `M1`, la branche `toto` elle est constituée des commits `M1`, `B1`, `B2` et `B3`.
+La branche `master` est toujours constituée seulement du *commit* `M1`, la branche `toto` elle est constituée des *commits* `M1`, `B1`, `B2` et `B3`.
 
-L'action de fusionner les commits de `toto` dans `master` est l'action de `merge` pour obtenir par défaut (`merge` fast-forward) cet historique :
+L'action de fusionner les *commits* de `toto` dans `master` est l'action pour obtenir par défaut (*merge fast-forward*) cet historique :
 
 ```text
 M1---B1---B2---B3 master, toto
@@ -54,15 +54,15 @@ M1---B1---B2---B3 master
 
 ### Comment fusionner une branche `toto` dans une branche `master` ?
 
-Il faut avoir checkout la branche de destination au préalable :
+Il faut se positionner sur la branche de destination au préalable (*checkout*) :
 
 ```text
 git checkout master
 ```
 
-Il est également important de n'avoir aucune modifications en cours dans la working directory sinon Git refusera la fusion.
+Il est également important de n'avoir aucune modifications en cours dans le répertoire de travail (*working directory*) sinon Git refusera la fusion.
 
-Ceci fait on peut fusionner :
+Ceci fait la fusion des deux branches est possible :
 
 ```text
 git merge toto
@@ -70,9 +70,9 @@ git merge toto
 
 C'est tout.
 
-### Quelle est la différence entre `merge` *fast-forward* et un `merge` *no-fast-forward* ?
+### Quelle est la différence entre un *merge fast-forward* et un *merge no-fast-forward* ?
 
-Un `merge` fast-forward peut avoir lieu lorsque la branche parente n'a pas évolué depuis la création de la branche à fusionner.
+Un *merge fast-forward* peut avoir lieu lorsque la branche parente n'a pas évolué depuis la création de la branche à fusionner.
 
 Par exemple dans cette situation :
 
@@ -88,9 +88,9 @@ L'exécution de `git merge toto` aboutira à un historique linéaire :
 M1---B1---B2---B3 master, toto
 ```
 
-Notez que par défaut, Git essaiera d'effectuer un `merge` fast-forward sauf configuration ou option explicite pour forcer un `merge` non fast-forward.
+Notez que par défaut, Git essaiera d'effectuer un *merge fast-forward* sauf configuration ou option explicite pour forcer un *merge non fast-forward*.
 
-Un `merge` non fast-forward a lieu lorsque la branche parente a évolué après la création de la branche enfante.
+Un *merge non fast-forward* a lieu lorsque la branche parente a évolué après la création de la branche enfante.
 
 Par exemple avec la situation précédente :
 
@@ -100,7 +100,7 @@ Par exemple avec la situation précédente :
    B1---B2---B3 toto  
 ```
 
-Avant de fusionner `toto` dans `master`, admettons que `master` ait reçu des commits, la situation devient :
+Avant de fusionner `toto` dans `master`, admettons que `master` ait reçu des *commits*, la situation devient :
 
 ```text
 ---M1---M2---M3 master
@@ -108,7 +108,7 @@ Avant de fusionner `toto` dans `master`, admettons que `master` ait reçu des co
    B1---B2---B3 toto  
 ```
 
-Dans ce cas Git rajoute un commit dit "de merge" qui aura la particularité d'avoir 2 parents, ici `M3` et `B3` :
+Dans ce cas Git rajoute un *commit* dit « de merge » qui aura la particularité d'avoir deux parents, ici `M3` et `B3` :
 
 ```text
 ---M1---M2---M3---M4 master, toto
@@ -116,9 +116,9 @@ Dans ce cas Git rajoute un commit dit "de merge" qui aura la particularité d'av
     B1---B2---B3
 ```
 
-Le commit de merge est noté `M4`, il contient la somme des modifications de `B1`, `B2` et `B3`.
+Le *commit* de *merge* est noté `M4`, il contient la somme des modifications de `B1`, `B2` et `B3`.
 
-Même lorsque une branche peut être fusionnée en fast-forward on peut forcer la création du commit de merge, par exemple avec cette situation :
+Même lorsque une branche peut être fusionnée en *merge fast-forward* on peut forcer la création du *commit* de *merge*, par exemple avec cette situation :
 
 ```text
 ---M1 master
@@ -144,7 +144,7 @@ Certains utilisateurs aiment conserver la visibilité de l'existance des branche
 
 ### Comment annuler une fusion terminée ?
 
-La solution la plus simple consiste à supprimer les commits sur la branche de destination. Par exemple dans cette situation :
+La solution la plus simple consiste à supprimer les *commits* sur la branche de destination. Par exemple dans cette situation :
 
 ```text
 ---M1-------------M4 master, toto
@@ -152,13 +152,13 @@ La solution la plus simple consiste à supprimer les commits sur la branche de d
     B1---B2---B3
 ```
 
-En ayant `checkout` la branche `master` on peut soit supprimer le dernier commit :
+En se positionnant (*checkout*) sur la branche `master` on peut soit supprimer le dernier *commit* :
 
 ```text
 git reset HEAD^
 ```
 
-Soit donner à la commande `reset` le SHA1 du commit `M1` :
+Soit donner à la commande `reset` le SHA1 du *commit* `M1` :
 
 ```text
 git reset --hard 1234abcd
