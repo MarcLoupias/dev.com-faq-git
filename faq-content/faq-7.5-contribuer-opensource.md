@@ -5,15 +5,11 @@
 ### Quels sont les usages à respecter habituellement avant de proposer une contribution ?
 
 Le fichier `README.md` du dépôt doit être lu en intégralité et très attentivement. Par convention c'est le point d'entrée documentaire de tout projet.
-
 Il est affiché par défaut par les outils web type GitHub / GitLab lorsqu'on accède au dépôt du projet.
-
 Les premières instructions pour utiliser le projet (installation des dépendances, compilation, exécution, ...) sont souvent rédigées dans ce fichier.
-
 Ces informations sont généralement reprises sur le wiki du projet et sur le site de présentation si il en dispose.
 
 Certains projets ont d'autres fichiers servant à rentrer plus dans le détail, souvent au format markdown, qu'il est utile de lire.
-
 Parmi ces fichiers ont peut trouver :
 
 - `CONTRIBUTE.md` ou `CONTRIBUTING.md`, certains projets proposent un fichier dédié aux informations liées aux contributions.
@@ -25,7 +21,7 @@ Parmi ces fichiers ont peut trouver :
 
 ### Comment proposer un sujet de contribution ?
 
-Ouvrez une issue ! C'est le canal de discussion principal et c'est en quelque sorte le *backlog* (la liste des tâches) du projet.
+Ouvrez une issue ! C'est le canal de discussion principal et c'est en quelque sorte la liste des tâches (le *backlog*) du projet.
 
 Il vaut mieux proposer une contribution par ce biais avant de se lancer dans le code.
 Inutile de perdre du temps à écrire du code si les mainteneurs du projet ne sont pas d'accord avec votre proposition.
@@ -38,10 +34,7 @@ C'est un excellent moyen de prendre la température d'autant que les historiques
 ### Pourquoi est-il nécessaire de forker le projet sur lequel on souhaite contribuer ?
 
 Cela simplifie considérablement la gestion des droits du dépôt principal pour les mainteneurs du projet.
-
 Avec un fork les contributeurs n'écrivent pas sur le dépôt principal, ils écrivent des commits sur leur fork et la Pull Request est un merge de ce fork vers le dépôt central.
-
-Ainsi, cela permet à des inconnus de proposer des modifications à un projet sans que les mainteneurs n'aient besoin de configurer des droits sur le dépôt de référence.
 
 ### Comment initialiser son dépôt local pour préparer une contribution ?
 
