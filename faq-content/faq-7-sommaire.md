@@ -139,3 +139,12 @@
 - GitHub
 - GitLab
 - Qu'elle est la différence entre une pull request (GitHub) et une merge request (GitLab) ?
+
+## 7.5 [Contribuer à un projet OpenSource](faq-7.5-contribuer-opensource.md)
+
+- Quels sont les usages à respecter habituellement avant de proposer une contribution ?
+- Comment proposer un sujet de contribution ?
+- Pourquoi est-il nécessaire de forker le projet sur lequel on souhaite contribuer ?
+- Comment initialiser son dépôt local pour préparer une contribution ?
+- Quelles sont les étapes habituelles d'une contribution de code ?
+- Qu'est-ce que cela m'apporte de contribuer à un projet OpenSource ?
