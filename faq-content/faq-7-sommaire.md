@@ -1,6 +1,6 @@
 # FAQ Git pour developpez.com
 
-## 7.1 [Généralités](faq-content/faq-7.1-generalites.md)
+## 7.1 [Généralités](faq-7.1-generalites.md)
 
 - Qu'est ce que Git ?
 - Que signifie Git ?
@@ -11,7 +11,7 @@
 - Qu'est-ce qu'un dépôt distant (*remote*) ?
 - Que désignent les termes upstream et downstream ?
 
-## 7.2 [Installation et configuration](faq-content/faq-7.2-install-config.md)
+## 7.2 [Installation et configuration](faq-7.2-install-config.md)
 
 - Comment installer Git sur Windows ?
 - Comment installer Git sur macOS ?
@@ -27,14 +27,14 @@
 
 ## 7.3 Utilisation
 
-## 7.3.1 [Initialisation d'un dépôt](faq-content/faq-7.3.1-initialisation-repository.md)
+## 7.3.1 [Initialisation d'un dépôt](faq-7.3.1-initialisation-repository.md)
 
 - Comment initialiser un dépôt ?
 - Comment initialiser un dépôt nu (*bare repository*) ?
 - Comment cloner un dépôt ?
 - Comment connaitre l'état du dépôt ?
 
-## 7.3.2 [Les dépôts distants (*remotes*)](faq-content/faq-7.3.2-remotes.md)
+## 7.3.2 [Les dépôts distants (*remotes*)](faq-7.3.2-remotes.md)
 
 - Comment lister les dépôts distants d'un dépôt ?
 - Comment ajouter un dépôt distant ?
@@ -45,7 +45,7 @@
 - Comment mettre à jour une branche locale avec une branche distante (`pull`) ?
 - Comment mettre à jour un dépôt distant (`push`) ?
 
-## 7.3.3 [La working directory](faq-content/faq-7.3.3-working-directory.md)
+## 7.3.3 [La working directory](faq-7.3.3-working-directory.md)
 
 - Qu'est-ce que le répertoire de travail (working directory) ?
 - Comment changer l'état du répertoire de travail ?
@@ -54,13 +54,13 @@
 - Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?
 - Quel est l'intérêt de faire un checkout sur un tag ?
 
-## 7.3.4 [L'index (*staging area*)](faq-content/faq-7.3.4-zone-staging.md)
+## 7.3.4 [L'index (*staging area*)](faq-7.3.4-zone-staging.md)
 
 - Qu'est ce que l'index ?
 - Comment ajouter un fichier à l'index ?
 - Comment retirer un fichier de l'index ?
 
-## 7.3.5 [Les commits](faq-content/faq-7.3.5-les-commits.md)
+## 7.3.5 [Les commits](faq-7.3.5-les-commits.md)
 
 - Qu'est ce qu'un *commit* ?
 - Comment créer un *commit* ?
@@ -74,7 +74,7 @@
 - Comment ajouter un *commit* provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt (*cherry-pick*) ?
 - Comment annuler un *commit* existant (*revert*) ?
 
-## 7.3.6 [Les branches](faq-content/faq-7.3.6-les-branches.md)
+## 7.3.6 [Les branches](faq-7.3.6-les-branches.md)
 
 - Qu'est-ce qu'une branche ?
 - Comment lister les branches locales ?
@@ -91,7 +91,7 @@
 - Comment comparer l'état de tous les fichiers présents dans deux branches ?
 - Comment comparer l'état d'un fichier présent dans deux branches ?
 
-## 7.3.7 [Les fusions de branches (*merge*)](faq-content/faq-7.3.7-merge.md)
+## 7.3.7 [Les fusions de branches (*merge*)](faq-7.3.7-merge.md)
 
 - Qu'est-ce qu'une fusion (*merge*) ?
 - Comment fusionner une branche `toto` dans une branche `master` ?
@@ -101,7 +101,7 @@
 - Comment gérer un conflit ?
 - Comment annuler une fusion en cours ?
 
-## 7.3.8 [Réécriture de l'historique (`rebase`)](faq-content/faq-7.3.8-rebase.md)
+## 7.3.8 [Réécriture de l'historique (`rebase`)](faq-7.3.8-rebase.md)
 
 - Qu'est-ce qu'un `rebase` ?
 - Pourquoi effectuer un `rebase` ?
@@ -112,7 +112,7 @@
 - Comment annuler un `rebase` en cours ?
 - Comment résoudre un conflit lors d'un `rebase` ?
 
-## 7.3.9 [Les tags](faq-content/faq-7.3.9-tags.md)
+## 7.3.9 [Les tags](faq-7.3.9-tags.md)
 
 - Qu'est-ce qu'un tag ?
 - Comment créer une tag ?
@@ -122,7 +122,7 @@
 - Comment comparer deux tags ?
 - Comment comparer l'état d'un fichier présent dans deux tags ?
 
-## 7.3.10 [Les logs](faq-content/faq-7.3.10-logs.md)
+## 7.3.10 [Les logs](faq-7.3.10-logs.md)
 
 - Qu'est-ce que le log ?
 - Comment afficher le log ?
@@ -134,7 +134,7 @@
 - Comment afficher la liste des fichiers modifiés pour chaque commit du log ?
 - Comment trouver qui a modifié quelle ligne dans un fichier donné ? (`blame`)
 
-## 7.4 [Outils](faq-content/faq-7.4-outils.md)
+## 7.4 [Outils](faq-7.4-outils.md)
 
 - GitHub
 - GitLab
