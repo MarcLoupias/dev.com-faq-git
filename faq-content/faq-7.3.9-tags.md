@@ -20,7 +20,7 @@ En ligne de commande :
 git tag -a v1.4.0 -m 'my version 1.4.0'
 ```
 
-A pour effet de créer un tag identifiant le commit actuellement `checkout`.
+À pour effet de créer un tag identifiant le commit actuellement `checkout`.
 
 Ce tag est créé localement, pour l'ajouter à un dépôt distant il est nécessaire de le pousser :
 

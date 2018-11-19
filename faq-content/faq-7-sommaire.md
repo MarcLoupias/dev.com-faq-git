@@ -7,7 +7,7 @@
 - Où trouver de la documentation pour Git ?
 - Où trouver le code source de Git ?
 - Quelles sont les différences entre un SCM centralisé comme Subversion et un SCM décentralisé comme Git ?
-- Qu'est-ce qu'un dépôt Git ?
+- Qu'est-ce qu'un dépôt (repository) Git ?
 - Qu'est-ce qu'un dépôt distant (*remote*) ?
 - Que désignent les termes upstream et downstream ?
 

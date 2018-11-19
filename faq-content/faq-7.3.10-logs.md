@@ -103,7 +103,8 @@ a733cb60 (Linus Torvalds  2005-06-28 14:21:02 -0700   11) #include "pack.h"
 8e440259 (Peter Eriksen   2006-04-02 14:44:09 +0200   14) #include "tag.h"
 8e440259 (Peter Eriksen   2006-04-02 14:44:09 +0200   15) #include "tree.h"
 f35a6d3b (Linus Torvalds  2007-04-09 21:20:29 -0700   16) #include "refs.h"
-70f5d5d3 (Nicolas Pitre   2008-02-28 00:25:19 -0500   17) #include "pack-revindex.h"628522ec (Junio C Hamano              2007-12-29 02:05:47 -0800   18) #include "sha1-lookup.h"
+70f5d5d3 (Nicolas Pitre   2008-02-28 00:25:19 -0500   17) #include "pack-revindex.h"
+628522ec (Junio C Hamano  2007-12-29 02:05:47 -0800   18) #include "sha1-lookup.h"
 ```
 
 Chaque ligne du fichier est affichée, devant chaque ligne on a le SHA1 en version courte, le nom de l'auteur et le timestamp de création du commit.

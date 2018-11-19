@@ -2,13 +2,13 @@
 
 ## 7.3.3 La working directory
 
-### Qu'est-ce que la working directory (répertoire de travail) ?
+### Qu'est-ce que le répertoire de travail (working directory) ?
 
-Littérallement, il s'agit du répertoire de travail de votre dépôt.
+Littérallement, il s'agit du répertoire de travail de votre dépôt. C'est
+le répertoire qui contient tous les fichiers suceptibles d'être dans le dépôt.
+Il contient le dossier `.git` permettant à Git de sauvegarder les méta-données.
 
-Il expose l'état actuel d'une branche, d'un commit ou d'un tag.
-
-C'est depuis la working directory que l'on effectue les modifications souhaitées sur nos fichiers.
+Il expose l'état actuel d'une branche, d'un commit ou d'un tag du projet.
 
 ### Comment changer l'état du répertoire de travail (working directory) ?
 
@@ -42,7 +42,9 @@ nothing to commit, working directory clean
 
 Indique qu'on a `checkout` la branche `master` et que rien n'est modifié.
 
-**En cas de doute**, toujours exécuter un `git status` pour savoir dans quel état se situe Git.
+**En cas de doute**, toujours exécuter un `git status` pour savoir dans quel état se situe Git
+et surtout, pour savoir si vous avez des fichiers en attente d'être commité, à ajouter à votre commit ou
+non versionné.
 
 ### Comment annuler les modifications effectuées sur un fichier du répertoire de travail ?
 
@@ -89,4 +91,5 @@ git checkout 0.4.14
 git checkout -b hotfix/0.4.15
 ```
 
-Le développement du hotfix peut alors démarrer sur la branche `hotfix/0.4.15`.
+Le développement du hotfix peut alors démarrer sur la branche `hotfix/0.4.15`
+tout en repartant de où la branche 0.4.14 était restée.

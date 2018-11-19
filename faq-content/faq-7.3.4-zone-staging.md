@@ -28,7 +28,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Il suffit de lire la sortie du CLI pour connaitre la commande à exécuter :
+Il suffit de lire la sortie de la commande pour comprendre ce qu'il faut exécuter :
 
 ```bash
 git add nom-fichier.txt

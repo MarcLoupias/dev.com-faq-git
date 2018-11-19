@@ -10,7 +10,7 @@ Un *commit* est composé de métadonnées et du contenu (le code source) à vers
 
 Les métadonnées sont :
 
-- le message de *commit* ;
+- le message du *commit* ;
 - le *committer* (l'utilisateur qui a créé le *commit*) ;
 - la date de création du *commit* (au format `RFC2822` par défaut, par exemple : `Tue Oct 9 00:58:43 2018 +0200`) ;
 - l'auteur (l'utilisateur qui a créé le contenu du *commit*) ;
@@ -37,7 +37,7 @@ Il est nécessaire d'avoir au préalable ajouté des fichiers à l'index (*stagi
 git commit
 ```
 
-Utilisée seule elle permet d'ouvrir l'éditeur de texte de votre CLI (**vim** sous macOS et sous Windows via Git BASH, **nano** sous Ubuntu par exemple) afin d'y saisir le message de *commit*.
+Utilisée seule elle permet d'ouvrir l'éditeur de texte de votre ligne de commande (**vim** sous macOS et sous Windows via Git BASH, **nano** sous Ubuntu par exemple) afin d'y saisir le message de *commit*.
 
 Si aucun fichier n'a été ajouté à l'index, il est possible de passer l'option `-a` qui demande à Git de prendre tous les fichiers modifiés présents dans le répertoire de travail (*working directory*).
 
