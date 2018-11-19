@@ -20,6 +20,6 @@
         }
     },
     "scripts": {
-        "test": "node node_modules/.bin/markdownlint faq-content/*.md"
+        "test": "node node_modules/.bin/markdownlint faq-content/**/*.md"
     }
 }
