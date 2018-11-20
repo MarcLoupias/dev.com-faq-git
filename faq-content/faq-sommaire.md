@@ -99,16 +99,16 @@
 - [Comment gérer un conflit ?](section-9/9.q001.md)
 - [Comment annuler une fusion en cours ?](section-9/9.q001.md)
 
-## 10 Réécriture de l'historique (`rebase`)
+## 10 Réécriture de l'historique (*rebase*)
 
-- [Qu'est-ce qu'un `rebase` ?](section-10/10.q001.md)
-- [Pourquoi effectuer un `rebase` ?](section-10/10.q002.md)
-- [Comment effectuer un `rebase` ?](section-10/10.q003.md)
-- [Qu'est-ce qu'un `rebase` intéractif ?](section-10/10.q004.md)
-- [Pourquoi effectuer un `rebase` intéractif ?](section-10/10.q005.md)
-- [Comment effectuer un `rebase` intéractif ?](section-10/10.q006.md)
-- [Comment annuler un `rebase` en cours ?](section-10/10.q007.md)
-- [Comment résoudre un conflit lors d'un `rebase` ?](section-10/10.q008.md)
+- [Qu'est-ce qu'un *rebase* ?](section-10/10.q001.md)
+- [Pourquoi effectuer un *rebase* ?](section-10/10.q002.md)
+- [Comment effectuer un *rebase* ?](section-10/10.q003.md)
+- [Qu'est-ce qu'un *rebase* intéractif ?](section-10/10.q004.md)
+- [Pourquoi effectuer un *rebase* intéractif ?](section-10/10.q005.md)
+- [Comment effectuer un *rebase* intéractif ?](section-10/10.q006.md)
+- [Comment annuler un *rebase* en cours ?](section-10/10.q007.md)
+- [Comment résoudre un conflit lors d'un *rebase* ?](section-10/10.q008.md)
 
 ## 11 Les tags
 
