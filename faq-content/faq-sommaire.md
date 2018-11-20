@@ -43,14 +43,14 @@
 - [Comment mettre à jour une branche locale avec une branche distante (`pull`) ?](section-4/4.q007.md)
 - [Comment mettre à jour un dépôt distant (`push`) ?](section-4/4.q008.md)
 
-## 5 La working directory
+## 5 Le répertoire de travail (*working directory*)
 
-- [Qu'est-ce que le répertoire de travail (working directory) ?](section-5/5.q001.md)
+- [Qu'est-ce que le répertoire de travail (*working directory*) ?](section-5/5.q001.md)
 - [Comment changer l'état du répertoire de travail ?](section-5/5.q002.md)
 - [Comment connaitre l'état du répertoire de travail selon Git ?](section-5/5.q003.md)
 - [Comment annuler les modifications effectuées sur un fichier du répertoire de travail ?](section-5/5.q004.md)
 - [Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?](section-5/5.q005.md)
-- [Quel est l'intérêt de faire un checkout sur un tag ?](section-5/5.q006.md)
+- [Quel est l'intérêt de faire un *checkout* sur un tag ?](section-5/5.q006.md)
 
 ## 6 L'index (*staging area*)
 
