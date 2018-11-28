@@ -92,12 +92,12 @@
 ## 9 Les fusions de branches (*merge*)
 
 - [Qu'est-ce qu'une fusion (*merge*) ?](section-009/009.q001.md)
-- [Comment fusionner une branche `toto` dans une branche `master` ?](section-009/009.q001.md)
-- [Quelle est la différence entre *merge fast-forward* et un *merge no-fast-forward* ?](section-009/009.q001.md)
-- [Comment annuler une fusion terminée ?](section-009/009.q001.md)
-- [Qu'est-ce qu'un conflit ?](section-009/009.q001.md)
-- [Comment gérer un conflit ?](section-009/009.q001.md)
-- [Comment annuler une fusion en cours ?](section-009/009.q001.md)
+- [Comment fusionner une branche `toto` dans une branche `master` ?](section-009/009.q002.md)
+- [Quelle est la différence entre *merge fast-forward* et un *merge no-fast-forward* ?](section-009/009.q003.md)
+- [Comment annuler une fusion terminée ?](section-009/009.q004.md)
+- [Qu'est-ce qu'un conflit ?](section-009/009.q005.md)
+- [Comment gérer un conflit ?](section-009/009.q006.md)
+- [Comment annuler une fusion en cours ?](section-009/009.q007.md)
 
 ## 10 Réécriture de l'historique (*rebase*)
 
@@ -113,12 +113,12 @@
 ## 11 Les tags
 
 - [Qu'est-ce qu'un tag ?](section-011/011.q001.md)
-- [Comment créer une tag ?](section-011/011.q001.md)
-- [Comment supprimer une tag ?](section-011/011.q001.md)
-- [Comment renommer une tag ?](section-011/011.q001.md)
-- [Comment lister les tags existants ?](section-011/011.q001.md)
-- [Comment comparer deux tags ?](section-011/011.q001.md)
-- [Comment comparer l'état d'un fichier présent dans deux tags ?](section-011/011.q001.md)
+- [Comment créer une tag ?](section-011/011.q002.md)
+- [Comment supprimer une tag ?](section-011/011.q003.md)
+- [Comment renommer une tag ?](section-011/011.q004.md)
+- [Comment lister les tags existants ?](section-011/011.q005.md)
+- [Comment comparer deux tags ?](section-011/011.q006.md)
+- [Comment comparer l'état d'un fichier présent dans deux tags ?](section-011/011.q007.md)
 
 ## 12 Les logs
 
