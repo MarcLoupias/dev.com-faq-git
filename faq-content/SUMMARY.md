@@ -1,4 +1,53 @@
-# FAQ Git pour developpez.com
+---
+auteurs:
+    - name: marco46
+      fullname: Marc Loupias
+      url: https://www.developpez.net/forums/u70899/marco46/
+      role: auteur
+    - name: littlewhite
+      fullname: Little White
+      url: https://www.developpez.net/forums/u240267/littlewhite/
+      role: correcteur
+    - name: mickael-baron
+      fullname: Mickael Baron
+      url: https://www.developpez.net/forums/u69211/mickael-baron/
+      role: correcteur
+    - name: songbird
+      fullname: Songbird
+      url: https://www.developpez.net/forums/u897329/songbird/
+      role: correcteur
+
+editeur:
+    edversion: Version 2.45
+    edtypexml: 0
+
+entete:
+    rubrique: 29
+    meta:
+        description: FAQ Git
+        keywords: faq, SCM, Git
+    titre:
+        page: FAQ Git
+        article: FAQ Git
+    date: 2018-12-01
+    miseajour: 2018-12-01
+    googleAnalytics: UA-6544797-1
+    licauteur: Developpez
+    lictype: 4
+    licannee: 2018
+    serveur: djibril-http
+    chemin: tutoriels/club/dvp-html5/faq-versionfinale
+    urlhttp: http://djibril.developpez.com/tutoriels/club/dvp-html5/faq-versionfinale/
+    pdf:
+        sautDePageAvantSection: 0
+        notesBasPage: FinDocument
+    nomfaq: FAQGIT
+
+edito: FAQ Git en français pour developpez.com
+licence: CC-BY-SA-4.0
+---
+
+# FAQ Git
 
 ## 1 Généralités
 
@@ -8,7 +57,7 @@
 - [Où trouver le code source de Git ?](section-001/001.q004.md)
 - [Quelles sont les différences entre un SCM centralisé comme Subversion et un SCM décentralisé comme Git ?](section-001/001.q005.md)
 - [Qu'est-ce qu'un dépôt (repository) Git ?](section-001/001.q006.md)
-- [Qu'est-ce qu'un dépôt distant (*remote*) ?](section-001/001.q007.md)
+- [Qu'est-ce qu'dépôt distant (*remote*) ?](section-001/001.q007.md)
 - [Que désignent les termes upstream et downstream ?](section-001/001.q008.md)
 
 ## 2 Installation et configuration
@@ -25,7 +74,7 @@
 - [Comment changer son email ?](section-002/002.q010.md)
 - [Comment changer l'URL d'un dépôt distant ?](section-002/002.q011.md)
 
-## 3 Initialisation d'un dépôt
+## 3 Initialisation d’un dépôt
 
 - [Comment initialiser un dépôt ?](section-003/003.q001.md)
 - [Comment initialiser un dépôt nu (*bare repository*) ?](section-003/003.q002.md)
@@ -46,13 +95,13 @@
 ## 5 Le répertoire de travail (*working directory*)
 
 - [Qu'est-ce que le répertoire de travail (*working directory*) ?](section-005/005.q001.md)
-- [Comment changer l'état du répertoire de travail ?](section-005/005.q002.md)
-- [Comment connaitre l'état du répertoire de travail selon Git ?](section-005/005.q003.md)
+- [Comment changer l'état du répertoire de travail (*working directory*) ?](section-005/005.q002.md)
+- [Comment connaitre l'état du répertoire de travail (*working directory*) selon Git ?](section-005/005.q003.md)
 - [Comment annuler les modifications effectuées sur un fichier du répertoire de travail ?](section-005/005.q004.md)
 - [Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?](section-005/005.q005.md)
 - [Quel est l'intérêt de faire un *checkout* sur un tag ?](section-005/005.q006.md)
 
-## 6 L'index (*staging area*)
+## 6 L’index (*staging area*)
 
 - [Qu'est ce que l'index ?](section-006/006.q001.md)
 - [Comment ajouter un fichier à l'index ?](section-006/006.q002.md)
@@ -69,7 +118,7 @@
 - [Comment supprimer les "n" derniers *commits* de la branche courante sans perdre les modifications ?](section-007/007.q007.md)
 - [Comment supprimer les "n" derniers *commits* de la branche courante avec les modifications ?](section-007/007.q008.md)
 - [Comment ajouter un *commit* d'une branche A dans une branche B sans effectuer un merge (*cherry-pick*) ?](section-007/007.q009.md)
-- [Comment ajouter un *commit* provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt (*cherry-pick*) ?](section-007/007.q010.md)
+- [Comment ajouter un *commit* provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt ? (cherry-pick)](section-007/007.q010.md)
 - [Comment annuler un *commit* existant (*revert*) ?](section-007/007.q011.md)
 
 ## 8 Les branches
@@ -93,13 +142,13 @@
 
 - [Qu'est-ce qu'une fusion (*merge*) ?](section-009/009.q001.md)
 - [Comment fusionner une branche `toto` dans une branche `master` ?](section-009/009.q002.md)
-- [Quelle est la différence entre *merge fast-forward* et un *merge no-fast-forward* ?](section-009/009.q003.md)
+- [Quelle est la différence entre un *merge fast-forward* et un *merge no-fast-forward* ?](section-009/009.q003.md)
 - [Comment annuler une fusion terminée ?](section-009/009.q004.md)
 - [Qu'est-ce qu'un conflit ?](section-009/009.q005.md)
 - [Comment gérer un conflit ?](section-009/009.q006.md)
 - [Comment annuler une fusion en cours ?](section-009/009.q007.md)
 
-## 10 Réécriture de l'historique (*rebase*)
+## 10 Réécriture de l’historique (*rebase*)
 
 - [Qu'est-ce qu'un *rebase* ?](section-010/010.q001.md)
 - [Pourquoi effectuer un *rebase* ?](section-010/010.q002.md)

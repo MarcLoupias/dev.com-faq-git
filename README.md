@@ -5,7 +5,7 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
 [![Build Status](https://travis-ci.com/MarcLoupias/dev.com-faq-git.svg?branch=master)](https://travis-ci.com/MarcLoupias/dev.com-faq-git)
 
-## Contribuer
+## Contribuer
 
 [Appel à contribution pour une section Git dans la FAQ SCM](https://www.developpez.net/forums/d1844867/general-developpement/alm/contribuez/appel-contribution-section-git-faq-scm/)
 
@@ -59,7 +59,7 @@ Testez que tout fonctionne en exécutant le linter :
 npm test
 ```
 
-### Linting du markdown
+### Linting du markdown
 
 Votre contribution devra passer ce contrôle pour être approuvée.
 
@@ -73,12 +73,16 @@ Linting avec [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlin
 
 Config cf `.markdownlist.json` ([json schema](https://github.com/DavidAnson/markdownlint/blob/master/schema/markdownlint-config-schema.json)).
 
+### Génération du sommaire
+
+Le fichier `SUMMARY.md` est généré par le script `build-summary`.
+
 ## Utilisation
 
 ### Comment utiliser cette FAQ ?
 
 Le projet ne dispose plus, pour le moment, de version HTML.
-Si vous souhaitez la consulter, je vous invite à lire directement le fichier [markdown en ligne](https://github.com/MarcLoupias/dev.com-faq-git/blob/master/faq-content/faq-7-sommaire.md).
+Si vous souhaitez la consulter, je vous invite à lire directement le fichier [markdown en ligne](https://github.com/MarcLoupias/dev.com-faq-git/blob/master/faq-content/SUMMARY.md).
 
 ## Licence et condition d'utilisation
 
