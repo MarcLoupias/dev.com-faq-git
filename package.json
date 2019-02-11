@@ -11,6 +11,7 @@
     },
     "devDependencies": {
         "dvlp-faq-md-summary": "^1.0.0",
+        "dvlp-faq-xml": "^1.0.0",
         "husky": "^1.3.1",
         "markdownlint-cli": "^0.13.0"
     },
@@ -22,6 +23,7 @@
     },
     "scripts": {
         "test": "node node_modules/.bin/markdownlint faq-content/**/*.md",
-        "build-summary": "node node_modules/.bin/mdfc convert 'dvlp-faq-md-summary' 'faq-content/**/*.md' --dest 'faq-content/' --filename 'SUMMARY'"
+        "build-summary": "node node_modules/.bin/mdfc convert 'dvlp-faq-md-summary' 'faq-content/**/*.md' --dest 'faq-content/' --filename 'SUMMARY'",
+        "build-xml": "node node_modules/.bin/mdfc convert 'dvlp-faq-xml' 'faq-content/**/*.md' --dest 'xml/' --filename 'dvlp-faq-git'"
     }
 }
