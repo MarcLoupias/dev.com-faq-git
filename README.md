@@ -92,6 +92,12 @@ Le bug css n'est pas résolu, il faut donc copier les css de `html/dvlp-faq-git/
 
 On examine la faq en lançant simplement le fichier `index.html` dans un navigateur.
 
+## visualiser la FAQ en html
+
+La commande `npm run serve` permet de générer une version `html` de la FAQ dans le répertoire `dist/`.
+
+Il s'agit simplement de pouvoir vérifier la FAQ dans un navigateur sans passer par le Kit. Aucune mise en forme disponible à ce stade.
+
 ## Utilisation
 
 ### Comment utiliser cette FAQ ?
