@@ -12,8 +12,10 @@
     "devDependencies": {
         "dvlp-faq-md-summary": "^1.0.0",
         "dvlp-faq-xml": "^1.0.0",
+        "http-server": "^0.11.1",
         "husky": "^1.3.1",
-        "markdownlint-cli": "^0.13.0"
+        "markdownlint-cli": "^0.13.0",
+        "mdfc-map-to-html": "^1.0.0"
     },
     "husky": {
         "hooks": {
@@ -24,6 +26,8 @@
     "scripts": {
         "test": "node node_modules/.bin/markdownlint faq-content/**/*.md",
         "build-summary": "node node_modules/.bin/mdfc convert 'dvlp-faq-md-summary' 'faq-content/**/*.md' --dest 'faq-content/' --filename 'SUMMARY'",
-        "build-xml": "node node_modules/.bin/mdfc convert 'dvlp-faq-xml' 'faq-content/**/*.md' --dest 'xml/' --filename 'dvlp-faq-git'"
+        "build-xml": "node node_modules/.bin/mdfc convert 'dvlp-faq-xml' 'faq-content/**/*.md' --dest 'xml/' --filename 'dvlp-faq-git'",
+        "build-html": "node node_modules/.bin/mdfc convert 'mdfc-map-to-html' 'faq-content/**/*.md'",
+        "serve": "npm run build-html && cd faq-content/ && find . -name '*.html' | cpio -pdm ../dist/ && find . -name '*.html' -type f -delete && cd .. && mv dist/SUMMARY.html dist/index.html && node node_modules/http-server/bin/http-server -c-1 dist/"
     }
 }
