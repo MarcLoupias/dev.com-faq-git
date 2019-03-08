@@ -5,7 +5,7 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
 [![Build Status](https://travis-ci.com/MarcLoupias/dev.com-faq-git.svg?branch=master)](https://travis-ci.com/MarcLoupias/dev.com-faq-git)
 
-## Contribuer
+## Contribuer
 
 [Appel à contribution pour une section Git dans la FAQ SCM](https://www.developpez.net/forums/d1844867/general-developpement/alm/contribuez/appel-contribution-section-git-faq-scm/)
 
@@ -59,7 +59,7 @@ Testez que tout fonctionne en exécutant le linter :
 npm test
 ```
 
-### Linting du markdown
+### Linting du markdown
 
 Votre contribution devra passer ce contrôle pour être approuvée.
 
@@ -73,12 +73,37 @@ Linting avec [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlin
 
 Config cf `.markdownlist.json` ([json schema](https://github.com/DavidAnson/markdownlint/blob/master/schema/markdownlint-config-schema.json)).
 
+### Génération du sommaire
+
+Le fichier `SUMMARY.md` est généré par le script `build-summary`.
+
+## tester la FAQ avec les outils dev.com
+
+Copier le fichier xml généré dans un répertoire du même nom (sans l'extension) sous le répertoire `documents/` à partir de la racine du kit.
+Par exemple pour le fichier `dvlp-faq-git.xml`, on va le copier sous `documents/dvlp-faq-git/dvlp-faq-git.xml`.
+Cf [doc du kit](http://club.developpez.com/outils/wiki/KitGeneration) pour les fichiers connexes (images, css, ...).
+
+Dans un shell aller dans le répertoire du kit `script/` et exécuter le script `buildFaq` avec le nom du répertoire cible.
+Par exemple pour construire la faq de l'exemple précédent : `sh buildFaq dvlp-faq-git`.
+
+Le kit génère les fichiers de la faq dans `html/<nom-de-la-faq>`. Dans notre exemple précédent ça donne `html/dvlp-faq-git`.
+
+Le bug css n'est pas résolu, il faut donc copier les css de `html/dvlp-faq-git/css/` à la racine de la faq.
+
+On examine la faq en lançant simplement le fichier `index.html` dans un navigateur.
+
+## visualiser la FAQ en html
+
+La commande `npm run serve` permet de générer une version `html` de la FAQ dans le répertoire `dist/`.
+
+Il s'agit simplement de pouvoir vérifier la FAQ dans un navigateur sans passer par le Kit. Aucune mise en forme disponible à ce stade.
+
 ## Utilisation
 
 ### Comment utiliser cette FAQ ?
 
 Le projet ne dispose plus, pour le moment, de version HTML.
-Si vous souhaitez la consulter, je vous invite à lire directement le fichier [markdown en ligne](https://github.com/MarcLoupias/dev.com-faq-git/blob/master/faq-content/faq-7-sommaire.md).
+Si vous souhaitez la consulter, je vous invite à lire directement le fichier [markdown en ligne](https://github.com/MarcLoupias/dev.com-faq-git/blob/master/faq-content/SUMMARY.md).
 
 ## Licence et condition d'utilisation
 
