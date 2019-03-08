@@ -38,9 +38,6 @@ entete:
     serveur: djibril-http
     chemin: tutoriels/club/dvp-html5/faq-versionfinale
     urlhttp: http://djibril.developpez.com/tutoriels/club/dvp-html5/faq-versionfinale/
-    pdf:
-        sautDePageAvantSection: 0
-        notesBasPage: FinDocument
     nomfaq: FAQGIT
 
 edito: FAQ Git en français pour developpez.com

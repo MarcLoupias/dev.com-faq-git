@@ -24,10 +24,10 @@
         <serveur>djibril-http</serveur>
         <chemin>tutoriels/club/dvp-html5/faq-versionfinale</chemin>
         <urlhttp>http://djibril.developpez.com/tutoriels/club/dvp-html5/faq-versionfinale/</urlhttp>
-        <pdf>
-            <sautDePageAvantSection>0</sautDePageAvantSection>
-            <notesBasPage>FinDocument</notesBasPage>
-        </pdf>
+        <nopdf/>
+        <nozip/>
+        <nodownload/>
+        <noebook/>
         <nomfaq>FAQGIT</nomfaq>
     </entete>
     <!-- description des auteurs -->
