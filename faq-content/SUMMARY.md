@@ -46,7 +46,7 @@ licence: CC-BY-SA-4.0
 
 # FAQ Git
 
-## 1 Généralités
+## Généralités
 
 - [Qu'est ce que Git ?](section-001/001.q001.md)
 - [Que signifie Git ?](section-001/001.q002.md)
@@ -57,7 +57,7 @@ licence: CC-BY-SA-4.0
 - [Qu'est-ce qu'dépôt distant (*remote*) ?](section-001/001.q007.md)
 - [Que désignent les termes upstream et downstream ?](section-001/001.q008.md)
 
-## 2 Installation et configuration
+## Installation et configuration
 
 - [Comment installer Git sur Windows ?](section-002/002.q001.md)
 - [Comment installer Git sur macOS ?](section-002/002.q002.md)
@@ -71,14 +71,14 @@ licence: CC-BY-SA-4.0
 - [Comment changer son email ?](section-002/002.q010.md)
 - [Comment changer l'URL d'un dépôt distant ?](section-002/002.q011.md)
 
-## 3 Initialisation d’un dépôt
+## Initialisation d’un dépôt
 
 - [Comment initialiser un dépôt ?](section-003/003.q001.md)
 - [Comment initialiser un dépôt nu (*bare repository*) ?](section-003/003.q002.md)
 - [Comment cloner un dépôt ?](section-003/003.q003.md)
 - [Comment connaitre l'état du dépôt ?](section-003/003.q004.md)
 
-## 4 Les dépôts distants (*remotes*)
+## Les dépôts distants (*remotes*)
 
 - [Comment lister les dépôts distants d'un dépôt ?](section-004/004.q001.md)
 - [Comment ajouter un dépôt distant ?](section-004/004.q002.md)
@@ -89,7 +89,7 @@ licence: CC-BY-SA-4.0
 - [Comment mettre à jour une branche locale avec une branche distante (`pull`) ?](section-004/004.q007.md)
 - [Comment mettre à jour un dépôt distant (`push`) ?](section-004/004.q008.md)
 
-## 5 Le répertoire de travail (*working directory*)
+## Le répertoire de travail (*working directory*)
 
 - [Qu'est-ce que le répertoire de travail (*working directory*) ?](section-005/005.q001.md)
 - [Comment changer l'état du répertoire de travail (*working directory*) ?](section-005/005.q002.md)
@@ -98,13 +98,13 @@ licence: CC-BY-SA-4.0
 - [Que veut dire `"detached HEAD" state` après avoir effectué un `git checkout` ?](section-005/005.q005.md)
 - [Quel est l'intérêt de faire un *checkout* sur un tag ?](section-005/005.q006.md)
 
-## 6 L’index (*staging area*)
+## L’index (*staging area*)
 
 - [Qu'est ce que l'index ?](section-006/006.q001.md)
 - [Comment ajouter un fichier à l'index ?](section-006/006.q002.md)
 - [Comment retirer un fichier de l'index ?](section-006/006.q003.md)
 
-## 7 Les commits
+## Les commits
 
 - [Qu'est ce qu'un *commit* ?](section-007/007.q001.md)
 - [Comment créer un *commit* ?](section-007/007.q002.md)
@@ -118,7 +118,7 @@ licence: CC-BY-SA-4.0
 - [Comment ajouter un *commit* provenant d'une branche d'un autre dépôt à la branche courante de ce dépôt ? (cherry-pick)](section-007/007.q010.md)
 - [Comment annuler un *commit* existant (*revert*) ?](section-007/007.q011.md)
 
-## 8 Les branches
+## Les branches
 
 - [Qu'est-ce qu'une branche ?](section-008/008.q001.md)
 - [Comment lister les branches locales ?](section-008/008.q002.md)
@@ -135,7 +135,7 @@ licence: CC-BY-SA-4.0
 - [Comment comparer l'état de tous les fichiers présents dans deux branches ?](section-008/008.q013.md)
 - [Comment comparer l'état d'un fichier présent dans deux branches ?](section-008/008.q014.md)
 
-## 9 Les fusions de branches (*merge*)
+## Les fusions de branches (*merge*)
 
 - [Qu'est-ce qu'une fusion (*merge*) ?](section-009/009.q001.md)
 - [Comment fusionner une branche `toto` dans une branche `master` ?](section-009/009.q002.md)
@@ -145,7 +145,7 @@ licence: CC-BY-SA-4.0
 - [Comment gérer un conflit ?](section-009/009.q006.md)
 - [Comment annuler une fusion en cours ?](section-009/009.q007.md)
 
-## 10 Réécriture de l’historique (*rebase*)
+## Réécriture de l’historique (*rebase*)
 
 - [Qu'est-ce qu'un *rebase* ?](section-010/010.q001.md)
 - [Pourquoi effectuer un *rebase* ?](section-010/010.q002.md)
@@ -156,7 +156,7 @@ licence: CC-BY-SA-4.0
 - [Comment annuler un *rebase* en cours ?](section-010/010.q007.md)
 - [Comment résoudre un conflit lors d'un *rebase* ?](section-010/010.q008.md)
 
-## 11 Les tags
+## Les tags
 
 - [Qu'est-ce qu'un tag ?](section-011/011.q001.md)
 - [Comment créer une tag ?](section-011/011.q002.md)
@@ -166,7 +166,7 @@ licence: CC-BY-SA-4.0
 - [Comment comparer deux tags ?](section-011/011.q006.md)
 - [Comment comparer l'état d'un fichier présent dans deux tags ?](section-011/011.q007.md)
 
-## 12 Les logs
+## Les logs
 
 - [Qu'est-ce que le log ?](section-012/012.q001.md)
 - [Comment afficher le log ?](section-012/012.q002.md)
@@ -178,13 +178,13 @@ licence: CC-BY-SA-4.0
 - [Comment afficher la liste des fichiers modifiés pour chaque commit du log ?](section-012/012.q008.md)
 - [Comment trouver qui a modifié quelle ligne dans un fichier donné ? (`blame`)](section-012/012.q009.md)
 
-## 13 Outils
+## Outils
 
 - [GitHub](section-013/013.q001.md)
 - [GitLab](section-013/013.q002.md)
 - [Qu'elle est la différence entre une pull request (GitHub) et une merge request (GitLab) ?](section-013/013.q003.md)
 
-## 14 Contribuer à un projet OpenSource
+## Contribuer à un projet OpenSource
 
 - [Quels sont les usages à respecter habituellement avant de proposer une contribution ?](section-014/014.q001.md)
 - [Comment proposer un sujet de contribution ?](section-014/014.q002.md)
