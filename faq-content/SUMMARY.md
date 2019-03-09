@@ -22,7 +22,7 @@ editeur:
     edtypexml: 0
 
 entete:
-    rubrique: 29
+    rubrique: 42
     meta:
         description: FAQ Git
         keywords: faq, SCM, Git
@@ -34,9 +34,9 @@ entete:
     licauteur: Developpez
     lictype: 4
     licannee: 2018
-    serveur: djibril-http
-    chemin: tutoriels/club/dvp-html5/faq-versionfinale
-    urlhttp: http://djibril.developpez.com/tutoriels/club/dvp-html5/faq-versionfinale/
+    serveur: TODO-changer
+    chemin: TODO-changer
+    urlhttp: TODO-changer
     nomfaq: FAQGIT
 
 edito: FAQ Git en français pour developpez.com
