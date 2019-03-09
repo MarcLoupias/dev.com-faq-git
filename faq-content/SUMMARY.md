@@ -31,7 +31,6 @@ entete:
         article: FAQ Git
     date: 2018-12-01
     miseajour: 2018-12-01
-    googleAnalytics: UA-6544797-1
     licauteur: Developpez
     lictype: 4
     licannee: 2018
