@@ -6,7 +6,7 @@
         <edtypexml>0</edtypexml>
     </editeur>
     <entete>
-        <rubrique>29</rubrique>
+        <rubrique>42</rubrique>
         <meta>
             <description>FAQ Git</description>
             <keywords>faq, SCM, Git</keywords>
@@ -20,9 +20,9 @@
         <licauteur>Developpez</licauteur>
         <lictype>4</lictype>
         <licannee>2018</licannee>
-        <serveur>djibril-http</serveur>
-        <chemin>tutoriels/club/dvp-html5/faq-versionfinale</chemin>
-        <urlhttp>http://djibril.developpez.com/tutoriels/club/dvp-html5/faq-versionfinale/</urlhttp>
+        <serveur>TODO-changer</serveur>
+        <chemin>TODO-changer</chemin>
+        <urlhttp>TODO-changer</urlhttp>
         <nopdf/>
         <nozip/>
         <nodownload/>
