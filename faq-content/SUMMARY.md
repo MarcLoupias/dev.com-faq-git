@@ -34,9 +34,9 @@ entete:
     licauteur: Developpez
     lictype: 4
     licannee: 2018
-    serveur: TODO-changer
-    chemin: TODO-changer
-    urlhttp: TODO-changer
+    serveur: marco46-http
+    chemin: faq/git/
+    urlhttp: https://alm.developpez.com/faq/git/
     nomfaq: FAQGIT
 
 edito: FAQ Git en français pour developpez.com

@@ -20,9 +20,9 @@
         <licauteur>Developpez</licauteur>
         <lictype>4</lictype>
         <licannee>2018</licannee>
-        <serveur>TODO-changer</serveur>
-        <chemin>TODO-changer</chemin>
-        <urlhttp>TODO-changer</urlhttp>
+        <serveur>marco46-http</serveur>
+        <chemin>faq/git/</chemin>
+        <urlhttp>https://alm.developpez.com/faq/git/</urlhttp>
         <nopdf/>
         <nozip/>
         <nodownload/>
