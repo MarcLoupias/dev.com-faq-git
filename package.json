@@ -5,6 +5,10 @@
     "author": "marlou <pro@marc-loupias.fr>",
     "private": true,
     "license": "CC-BY-SA-4.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MarcLoupias/dev.com-faq-git"
+    },
     "engines": {
         "node": ">=6.0.0",
         "npm": ">=5.2.0"

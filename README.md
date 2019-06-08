@@ -5,6 +5,10 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
 [![Build Status](https://travis-ci.com/MarcLoupias/dev.com-faq-git.svg?branch=master)](https://travis-ci.com/MarcLoupias/dev.com-faq-git)
 
+[FAQ Git : retrouvez les meilleures réponses à vos questions pour apprendre Git, de niveau débutant à expert](https://alm.developpez.com/faq/git/)
+
+[Publication de la FAQ Git : 05/06/2019](https://www.developpez.net/forums/d1978754/general-developpement/alm/usine-logicielle/scm/git/publication-faq-git/#post10976014)
+
 ## Contribuer
 
 [Appel à contribution pour une section Git dans la FAQ SCM](https://www.developpez.net/forums/d1844867/general-developpement/alm/contribuez/appel-contribution-section-git-faq-scm/)
