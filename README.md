@@ -54,7 +54,7 @@ Vous avez besoin de **Node.js** (version LTS minimum, donc `6+`) et de **npm** d
 Si c'est le cas vous pouvez exécuter un bête :
 
 ```bash
-npm install
+npm ci
 ```
 
 Testez que tout fonctionne en exécutant le linter :
